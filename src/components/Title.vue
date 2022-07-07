@@ -1,4 +1,6 @@
 <template>
+<v-row>
+  <v-col>
   <header>
     <div class="title" id="fade-out" v-if="!hide"> 
       <span id="text">Let's make some music.</span>
@@ -7,10 +9,11 @@
       <span id="text-2">melodies.to </span>
     </div>
   </header>
+  </v-col>
+</v-row>
 </template>
 
 <script>
-import { mapMutations } from "vuex";
 export default {
   name: "Title",
   data(){
