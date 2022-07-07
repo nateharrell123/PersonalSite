@@ -1,14 +1,22 @@
 <template>
 <v-row>
-  <v-col>
-  <header>
-    <div class="title" id="fade-out" v-if="!hide"> 
-      <span id="text">Let's make some music.</span>
-    </div>
-    <div class="title-2" id="fade-in">
-      <span id="text-2">melodies.to </span>
-    </div>
-  </header>
+  <!-- left side -->
+  <v-col cols="1">
+    Left
+  </v-col>
+    <v-col cols="10">
+    <header>
+      <div class="title" id="fade-out" v-if="!hide"> 
+        <span id="text">Let's make some music.</span>
+      </div>
+      <div class="title" id="fade-in">
+        <span id="text">my portfolio</span>
+      </div>
+    </header>
+    </v-col>
+    <!-- right side -->
+  <v-col cols="1">
+    Right
   </v-col>
 </v-row>
 </template>
@@ -34,7 +42,6 @@ export default {
 
 <style scoped>
 .title {
-  margin-top: 30px;
   font-weight: 550;
   font-family: "Montserrat";
   text-align: center;
@@ -42,32 +49,8 @@ export default {
   text-transform: uppercase;
   transition: transform 1s;
 }
-.title-2{
-  margin-top: 30px;
-  font-weight: 550;
-  font-family: "Montserrat";
-  text-align:left;
-  font-size: 75px;
-  padding-left:55px;
-  transition: transform 1s;
-  color:white;
-}
 #text {
-  background-image: linear-gradient(45deg, #eb1e82, #f88d30);
-  background-size: 100%;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#text-2{
-  background-image: linear-gradient(45deg, #eb1e82, #f88d30);
-  background-size: 100%;
-  letter-spacing: 5px;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+
 }
 @keyframes slideInTop {
   0% {
