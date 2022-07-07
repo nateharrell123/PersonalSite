@@ -1,13 +1,13 @@
 <template>
 <v-row>
   <!-- left side -->
-  <v-col cols="1">
+  <v-col cols="2" id="fade-in">
     Left
   </v-col>
-    <v-col cols="10">
+    <v-col cols="8">
     <header>
       <div class="title" id="fade-out" v-if="!hide"> 
-        <span id="text">Let's make some music.</span>
+        <span id="text">Hey there :)</span>
       </div>
       <div class="title" id="fade-in">
         <span id="text">my portfolio</span>
@@ -15,7 +15,7 @@
     </header>
     </v-col>
     <!-- right side -->
-  <v-col cols="1">
+  <v-col cols="2" id="fade-in">
     Right
   </v-col>
 </v-row>
@@ -43,7 +43,7 @@ export default {
 <style scoped>
 .title {
   font-weight: 550;
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
   text-align: center;
   font-size: 75px;
   text-transform: uppercase;
