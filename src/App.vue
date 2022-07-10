@@ -3,6 +3,7 @@
     <Title/>
     <!-- <Pedals/> -->
     <Projects/>
+    <Footer/>
   </v-app>
 </template>
 
@@ -10,6 +11,7 @@
 import Title from "@/components/Title.vue"
 //import Pedals from "@/components/Pedals.vue"
 import Projects from "@/components/Projects.vue"
+import Footer from "@/components/Footer.vue"
 export default {
   name: "App",
 
@@ -19,7 +21,8 @@ export default {
   components:{
     Title,
     //Pedals,
-    Projects
+    Projects,
+    Footer
   }
 };
 </script>
