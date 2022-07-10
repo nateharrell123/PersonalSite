@@ -1,13 +1,15 @@
 <template>
   <v-app>
     <Title/>
-    <Pedals/>
+    <!-- <Pedals/> -->
+    <Projects/>
   </v-app>
 </template>
 
 <script>
 import Title from "@/components/Title.vue"
-import Pedals from "@/components/Pedals.vue"
+//import Pedals from "@/components/Pedals.vue"
+import Projects from "@/components/Projects.vue"
 export default {
   name: "App",
 
@@ -16,7 +18,8 @@ export default {
   }),
   components:{
     Title,
-    Pedals
+    //Pedals,
+    Projects
   }
 };
 </script>

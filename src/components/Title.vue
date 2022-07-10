@@ -1,10 +1,10 @@
 <template>
 <v-row>
   <!-- left side -->
-  <v-col cols="2" id="fade-in">
+  <v-col cols="3" id="fade-in">
     Left
   </v-col>
-    <v-col cols="8">
+    <v-col cols="6">
     <header>
       <div class="title" id="fade-out" v-if="!hide"> 
         <span id="text">Hey there :)</span>
@@ -15,7 +15,7 @@
     </header>
     </v-col>
     <!-- right side -->
-  <v-col cols="2" id="fade-in">
+  <v-col cols="3" id="fade-in">
     Right
   </v-col>
 </v-row>
