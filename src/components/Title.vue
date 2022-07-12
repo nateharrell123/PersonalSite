@@ -7,10 +7,10 @@
     <v-col cols="6">
     <header>
       <div class="title" id="fade-out" v-if="!hide"> 
-        <span id="text">Hey there :)</span>
+        Hey there :)
       </div>
       <div class="title" id="fade-in">
-        <span id="text">my portfolio</span>
+        My portfolio
       </div>
     </header>
     </v-col>
@@ -45,12 +45,11 @@ export default {
   font-weight: 550;
   /* font-family: "Montserrat"; */
   text-align: center;
-  font-size: 75px;
   text-transform: uppercase;
   transition: transform 1s;
 }
 #text {
-
+  font-size:125px;
 }
 @keyframes slideInTop {
   0% {
