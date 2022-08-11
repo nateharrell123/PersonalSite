@@ -10,7 +10,7 @@
         Hey there :)
       </div>
       <div class="title" id="fade-in">
-        My portfolio
+        
       </div>
     </header>
     </v-col>
@@ -18,6 +18,13 @@
   <v-col cols="3" id="fade-in">
     Right
   </v-col>
+  <v-row> 
+    <v-col cols="3"/>
+    <v-col id="fade-in">
+      <button class="how-it-works" v-if="hide">My Projects</button>
+    </v-col>
+    <v-col cols="3"/>
+  </v-row>
 </v-row>
 </template>
 
@@ -47,6 +54,36 @@ export default {
   text-align: center;
   text-transform: uppercase;
   transition: transform 1s;
+}
+.how-it-works{
+  text-transform: uppercase;
+  font-size:60px;
+}
+.how-it-works{
+  font-size: 45px;
+  padding-right: 35px;
+  color: #9AAAAA;
+  background:none;
+  outline:none;
+  border:none;
+}
+.how-it-works:hover{
+  color:#9DDDDD;
+}
+.how-it-works::after{
+  content:'';
+  height:2px;
+  width:0%;
+  background-color: #1AAAAA;
+  display:block;
+  transition: .2s ease-in-out;
+}
+.how-it-works:hover::after{
+  content:'';
+  height:2px;
+  width:100%;
+  background-color: #1AAAAA;
+  display:block;
 }
 #text {
   font-size:125px;
