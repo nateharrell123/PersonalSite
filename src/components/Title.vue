@@ -2,26 +2,28 @@
 <v-row>
   <!-- left side -->
   <v-col cols="3" id="fade-in">
-    Left
+    <!-- Left -->
   </v-col>
     <v-col cols="6">
     <header>
       <div class="title" id="fade-out" v-if="!hide"> 
         Hey there :)
       </div>
-      <div class="title" id="fade-in">
-        
-      </div>
+      <!-- <div style="text-align:center;"> 
+        <button class="how-it-works" v-if="hide">My Projects</button>
+      </div> -->
     </header>
     </v-col>
     <!-- right side -->
   <v-col cols="3" id="fade-in">
-    Right
+    <!-- Right -->
   </v-col>
-  <v-row> 
+  <v-row class="pa-0"> 
     <v-col cols="3"/>
     <v-col id="fade-in">
-      <button class="how-it-works" v-if="hide">My Projects</button>
+      <div style="text-align:center;"> 
+        <button class="how-it-works" v-if="hide">My Projects</button>
+      </div>
     </v-col>
     <v-col cols="3"/>
   </v-row>
@@ -50,6 +52,7 @@ export default {
 <style scoped>
 .title {
   font-weight: 550;
+  font-size:300px;
   /* font-family: "Montserrat"; */
   text-align: center;
   text-transform: uppercase;
@@ -61,7 +64,6 @@ export default {
 }
 .how-it-works{
   font-size: 45px;
-  padding-right: 35px;
   color: #9AAAAA;
   background:none;
   outline:none;

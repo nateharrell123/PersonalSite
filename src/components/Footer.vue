@@ -1,5 +1,5 @@
 <template>
-    <v-row class="footer" id="fade-in" v-if="hide">
+    <v-row class="footer" id="fade-in">
         <v-col>
             Footer
         </v-col>
