@@ -2,19 +2,13 @@
     <v-row id="fade-in">
         <v-col cols="3"/> <!-- left -->
         <v-col cols="2">
-            <v-card>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime ab, nesciunt ipsum sunt, perspiciatis voluptatibus quo quae ipsam ut quis aliquid. Officiis, nam tempore cupiditate vel error officia voluptatibus.
-            </v-card>
+            <Project/>
         </v-col>
         <v-col cols="2">
-            <v-card>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime ab, nesciunt ipsum sunt, perspiciatis voluptatibus quo quae ipsam ut quis aliquid. Officiis, nam tempore cupiditate vel error officia voluptatibus.
-            </v-card>
+            <Project/>
         </v-col>
         <v-col cols="2">
-            <v-card>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime ab, nesciunt ipsum sunt, perspiciatis voluptatibus quo quae ipsam ut quis aliquid. Officiis, nam tempore cupiditate vel error officia voluptatibus.
-            </v-card>
+            <Project/>
         </v-col>
         
         <v-col cols="3"/> <!-- right -->
@@ -24,6 +18,7 @@
 </template>
 
 <script>
+import Project from "./Project.vue"
 export default {
     name: "Projects",
     data(){
@@ -31,6 +26,9 @@ export default {
 
         }
     },
+    components: {
+        Project
+    }
 
 }
 </script>
