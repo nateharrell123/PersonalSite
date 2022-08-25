@@ -93,7 +93,7 @@ body{
   left:80%;
   animation:animate 5s linear infinite;
 }
-/* @keyframes animate {
+@keyframes animate {
   0%{
     transform:scale(0) translateY(0) rotate(0);
     opacity: 1;
@@ -102,5 +102,5 @@ body{
     transform:scale(1.3) translateY(-90px) rotate(360deg);
     opacity: 0;
   }
-} */
+}
 </style>
