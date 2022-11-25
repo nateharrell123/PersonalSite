@@ -1,7 +1,7 @@
 <template>
   <v-row class="ma-0 pa-0" id="row">
     <v-col cols="2"/>
-    <v-col cols="8">
+    <v-col cols="7">
       <v-avatar size="60px">
       <v-img src="../assets/nate.jpg" alt="nate"
         class="nate">
@@ -11,8 +11,8 @@
         Nate Harrell
       </span>
     </v-col>
-    <v-col cols="2">
-      <span class="contact">Contact</span>
+    <v-col cols="3">
+      <button @click="contact" class="contact">Contact</button>
     </v-col>
   </v-row>
 </template>
@@ -20,6 +20,16 @@
 <script>
 export default {
   name: "Header",
+  data(){
+    return{
+
+    }
+  },
+  methods: {
+    contact(){
+      console.log('contact');
+    }
+  }
 }
 </script>
 
@@ -39,7 +49,32 @@ export default {
     vertical-align: middle;
 }
 .contact{
-position:relative;
-top:18px;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  position:relative;
+  font-weight:200;
+  top:19px;
+  font-size:16px;
+  background: none;
+  outline: none;
+  border:none;
 }
+.contact:hover{
+  color:#3ebbbb;
+}
+.contact::after{
+  content:'';
+  height:1px;
+  width:0%;
+  background-color: #1AAAAA;
+  display:block;
+  transition:.2s ease-in-out;
+}
+.contact:hover::after{
+  content:'';
+  height:1px;
+  width:100%;
+  background-color:#1AAAAA;
+  display: block;
+}
+
 </style>
