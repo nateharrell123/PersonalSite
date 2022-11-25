@@ -52,8 +52,8 @@ export default {
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
   position:relative;
   font-weight:200;
-  top:19px;
-  font-size:16px;
+  top:12px;
+  font-size:22px;
   background: none;
   outline: none;
   border:none;
@@ -65,7 +65,7 @@ export default {
   content:'';
   height:1px;
   width:0%;
-  background-color: #1AAAAA;
+  background-color: #3ebbbb;
   display:block;
   transition:.2s ease-in-out;
 }
@@ -73,7 +73,7 @@ export default {
   content:'';
   height:1px;
   width:100%;
-  background-color:#1AAAAA;
+  background-color:#3ebbbb;
   display: block;
 }
 
