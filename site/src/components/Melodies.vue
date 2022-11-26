@@ -2,11 +2,11 @@
 <v-card color="#32363b" id="melody-card">
     <v-row class="ma-0 pa-0">
       <v-col>
-        <span class="center" @click="toMelodies" id="text-2">Melodies.to </span>
+        <span class="center" id="text-2">Melodies.to </span>
       </v-col>
     </v-row>
     <v-row class="ma-0 pa-0">
-        <p class="desc" @click="toMelodies" id="text">A web app that that creates AI generated Melodies.</p>
+        <p class="desc" id="text">A web app that that creates AI generated Melodies.</p>
     </v-row>
 </v-card>
 </template>
@@ -27,7 +27,6 @@ export default {
     margin: 0 auto;
 }
 #text-2{
-  cursor: pointer;
   background-image: linear-gradient(45deg, #eb1e82, #f88d30);
   background-size: 100%;
   font-weight:600;
@@ -36,7 +35,6 @@ export default {
   -webkit-text-fill-color: transparent;
 }
 #text{
-  cursor: pointer;
   background-image: linear-gradient(45deg, #eb1e82, #f88d30);
   background-size: 100%;
   font-weight:300;
