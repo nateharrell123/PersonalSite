@@ -5,9 +5,9 @@
         <span class="center" id="text-2">Melodies.to </span>
       </v-col>
     </v-row>
-    <v-row class="ma-0 pa-0">
+    <!-- <v-row class="ma-0 pa-0">
         <p class="desc" id="text">A web app that that creates AI generated Melodies.</p>
-    </v-row>
+    </v-row> -->
 </v-card>
 </template>
 
@@ -44,5 +44,8 @@ export default {
 }
 .desc{
     text-align: center;
+}
+#melody-card{
+  border-radius:20px;
 }
 </style>
