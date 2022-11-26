@@ -1,9 +1,11 @@
 <template>
     <div>
-        <v-row>
-            <v-col>
+        <v-row class="ma-0 pa-0">
+            <v-col cols="2"/>
+            <v-col cols="8">
                 <p class="title">Check out my projects:</p>
             </v-col>
+            <v-col cols="2"/>
         </v-row>
         <v-row class="ma-0 pa-0" id="projects">
             <v-col cols="2"/>
@@ -11,10 +13,10 @@
             <Melodies/>
             </v-col>
             <v-col>
-            <Melodies/>
+            <!-- <Melodies/> -->
             </v-col>
             <v-col>
-            <Melodies/>
+            <!-- <Melodies/> -->
             </v-col>
             <v-col cols="2"/>
         </v-row>
@@ -37,8 +39,7 @@ export default {
     font-weight: 800;
     font-size:28px !important;
     letter-spacing: 1px;
-    padding-top:50px;
-    margin-left:24.5%;
+    padding-top:40px;
     animation: 3s ease 0s normal forwards 1 fadein;
 }
 #projects{

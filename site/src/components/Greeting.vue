@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-row class="row">
+        <v-row class="greeting-row">
             <v-col cols="2"/>
             <v-col cols="8">
                 <p class="text">{{greeting}}</p>
@@ -45,7 +45,7 @@ export default {
                 this.greeting = `Welcome, I'm Nate!`;
                 break;
             case 4:
-                this.greeting = `Howdy, I'm Nate!`;
+                this.greeting = `Hi, I'm Nate!`;
                 break;
             default:
                 this.greeting = `Hello there, I'm Nate!`;
@@ -56,9 +56,9 @@ export default {
 </script>
 
 <style scoped>
-.row{
+.greeting-row{
     padding-top:5%;
-    padding-left:8%;
+    padding-bottom:2%;
 }
 .text{
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
@@ -67,7 +67,7 @@ export default {
     letter-spacing: 1px;
 	padding: 0;
 	margin: 0;
-	margin-left: 34%;
+	margin-left: 33.7%;
 	transform: translateX(-200%);
 	opacity: 0;
 	animation: slide-in-anim 1.5s ease-out forwards;
@@ -76,8 +76,7 @@ export default {
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
     font-size:18px;
     font-weight: 500;
-    padding-top:0px;
-    margin-left: 23.5%;
+    padding-top:0px !important;
     animation: 3s ease 0s normal forwards 1 fadein;
 }
 .title{
