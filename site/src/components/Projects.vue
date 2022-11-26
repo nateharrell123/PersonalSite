@@ -8,7 +8,7 @@
             <v-col cols="2"/>
         </v-row>
         <v-row class="ma-0 pa-0" id="projects">
-            <v-col cols="2"/>
+            <v-col cols="1"/>
             <v-col>
             <Melodies/>
             </v-col>
@@ -18,7 +18,7 @@
             <v-col>
             <!-- <Melodies/> -->
             </v-col>
-            <v-col cols="2"/>
+            <v-col cols="1"/>
         </v-row>
     </div>
 </template>
