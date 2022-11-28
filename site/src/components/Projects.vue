@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import Melodies from "./Melodies.vue"
+import Melodies from "./Projects/Melodies.vue"
 export default {
     name: "Projects",
     components: {
