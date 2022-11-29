@@ -7,15 +7,17 @@
             </v-col>
             <v-col cols="2"/>
         </v-row>
-        <v-row class="ma-0 pa-0" id="projects">
+        <v-row class="ma-0 pa-0" id="projects" align-self="center">
             <v-col cols="2"/>
             <v-col>
             <Melodies/>
             </v-col>
+            <v-col cols="1"/>
             <v-col>
-            <!-- <Melodies/> -->
+            <Melodies/>
             </v-col>
-            <v-col cols="2"/>
+            <v-col cols="1"/>
+            <v-col cols="3"/>
         </v-row>
     </div>
 </template>

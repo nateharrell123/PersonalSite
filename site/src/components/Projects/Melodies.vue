@@ -60,10 +60,10 @@ export default {
 .container{
   position:relative;
   max-width:100vw; 
-  display:flex;
+  /* display:flex; */
   justify-content: space-around;
   flex-wrap: wrap;
-  /* padding:40px 0; */
+  padding:0;
 }
 .card{
   position:relative;
@@ -119,7 +119,7 @@ export default {
   text-decoration: none;
   font-weight:400;
   color:#fff;
-  background:linear-gradient(90deg, #f403d4, #f44141, #fce628, #f403d4);
+  background:linear-gradient(90deg, #f403d4, #f44141, #ddca1b, #f403d4);
   background-size:400%;
   z-index:1;
 }
