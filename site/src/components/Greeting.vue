@@ -11,13 +11,13 @@
             <v-col cols="2"/>
             <v-col cols="8" class="intro">
                 <v-row class="ma-0 pa-0">
-                    I'm a Software Developer &#129489;&#8205;&#128187;,
+                    I'm a Software Developer &#129489;&#8205;&#128187;
                 </v-row>
                 <v-row class="ma-0 pa-0">
-                    Musician &#127925;,
+                    Musician &#127925;
                 </v-row>
                 <v-row class="ma-0 pa-0">
-                    And lover of tech &#129299;.
+                    And lover of tech &#129299;
                 </v-row>
 <v-row class="socials ma-0 pa-0"> 
                     <svg @click="toLinkedIn" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"

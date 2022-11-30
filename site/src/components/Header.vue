@@ -12,7 +12,6 @@
         Nate Harrell
       </span>
     </v-col>
-    <v-col cols="1"/>
     <v-col>
       <button @click="contact" class="contact">Contact</button>
     </v-col>
@@ -63,14 +62,13 @@ export default {
 .contact{
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
   font-weight:200;
-  float:right;
   font-size:22px;
   background: none;
   outline: none;
   border:none;
   position:relative;
   top:14px;
-  left:40px;
+  float:right;
 }
 .contact:hover{
   color:#3ebbbb;

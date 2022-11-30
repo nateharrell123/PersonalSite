@@ -10,7 +10,7 @@
     </v-row>
 </v-card> -->
 <div class="container">
-  <div class="card">
+  <v-card color="#222" class="card">
     <div class="imgbox">
       <!-- <i class="fab fa-angular"></i> -->
       <v-img src="@/assets/note.png" alt="nate" class="fab fa-angular"
@@ -18,16 +18,22 @@
       >
       </v-img>
     </div>
-    <div class="content">
-      <h3 id="angular">
-        MELODIES.TO
-      </h3>
-      <p id="text-2">Melodies.to is a web application
-        that creates AI generated melodies.
-      </p>
-      <a @click="toMelodies"> Visit </a>
-    </div>
-  </div>
+
+    <v-row class="ma-0 pa-0">
+      <v-col cols="2"/>
+      <v-col>
+        <div class="content">
+          <h3 id="angular">
+            MELODIES.TO
+          </h3>
+          <p id="text-2">Melodies.to is a web application
+            that creates AI generated melodies.
+          </p>
+          <a @click="toMelodies"> Visit </a>
+        </div>
+      </v-col>
+    </v-row>
+  </v-card>
 </div>
 </template>
 
@@ -59,7 +65,7 @@ export default {
 }
 .container{
   position:relative;
-  max-width:100vw; 
+  /* max-width:100vw;  */
   /* display:flex; */
   justify-content: space-around;
   flex-wrap: wrap;
@@ -67,11 +73,9 @@ export default {
 }
 .card{
   position:relative;
-  width:360px;
   height:210px; 
   background-color:#222;
-  /* margin: 40px 70px; */
-  border-radius:20px;
+  border-radius:30px;
   box-shadow:0 5px 15px rgba(0,0,0, 0.5);
 }
 .card .imgbox{
@@ -99,11 +103,8 @@ export default {
   top:calc(50% - 75px);
 }
 .card .content{
-  position:absolute;
-  right: 0;
-  width:calc(100% - 75px);
-  height: 100%;
-  padding:28px;
+  margin-top:20px;
+  margin-left:20px;
 }
 #angular{
   background-image: linear-gradient(45deg, #eb1e82, #f88d30);

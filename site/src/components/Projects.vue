@@ -7,17 +7,15 @@
             </v-col>
             <v-col cols="2"/>
         </v-row>
-        <v-row class="ma-0 pa-0" id="projects" align-self="center">
+        <v-row class="ma-0 pa-0" id="projects">
             <v-col cols="2"/>
+            <v-col class="inner xs-12">
+            <Melodies/>
+            </v-col>
             <v-col>
             <Melodies/>
             </v-col>
-            <v-col cols="1"/>
-            <v-col>
-            <Melodies/>
-            </v-col>
-            <v-col cols="1"/>
-            <v-col cols="3"/>
+            <v-col cols="2"/>
         </v-row>
     </div>
 </template>
@@ -44,6 +42,7 @@ export default {
 #projects{
     animation: 3s ease 0s normal forwards 1 fadein;
 }
+
 @keyframes fadein {
   0% {
     opacity: 0;
