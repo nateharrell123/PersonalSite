@@ -73,7 +73,7 @@ export default {
 }
 .card{
   position:relative;
-  height:210px; 
+  height:240px; 
   background-color:#222;
   border-radius:30px;
   box-shadow:0 5px 15px rgba(0,0,0, 0.5);
@@ -112,9 +112,9 @@ export default {
   -webkit-text-fill-color: transparent;
 }
 .card .content a{
-  display:inline-block;
+  /* display:inline-block; */
   font-size:0.9em;
-  margin-top:10px;
+  /* margin-top:10px; */
   border-radius:5px;
   padding: 10px 20px;
   text-decoration: none;
