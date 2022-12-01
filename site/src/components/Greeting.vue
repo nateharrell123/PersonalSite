@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-row class="greeting-row">
+        <v-row class="greeting-row ma-0">
             <v-col cols="2"/>
             <v-col cols="8">
                 <p class="text">{{greeting}}</p>
@@ -107,6 +107,10 @@ export default {
 }
 .social-icon{
     margin-right:10px;
+    cursor:pointer;
+}
+.social-icon:hover{
+    fill:#3ebbbb;
 }
 .socials{
     padding:5px;
@@ -121,7 +125,7 @@ export default {
     letter-spacing: 1px;
 	padding: 0;
 	margin: 0;
-	margin-left: 33.7%;
+	margin-left: 32.8%;
 	transform: translateX(-200%);
 	opacity: 0;
 	animation: slide-in-anim 1.5s ease-out forwards;

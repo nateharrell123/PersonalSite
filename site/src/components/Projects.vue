@@ -7,21 +7,15 @@
             </v-col>
             <v-col cols="2"/>
         </v-row>
-        <v-row class="ma-0 pa-0" id="projects">
-            <!-- <v-col cols="2"/> -->
-            <v-col class="inner" cols="6">
-            <Melodies/>
-            </v-col>
-            <v-col cols="6">
-            <Melodies/>
-            </v-col>
+        <v-row class="shrink" id="projects">
+            <v-col cols="2" v-show="$vuetify.breakpoint.lg"/>
             <v-col>
             <Melodies/>
             </v-col>
             <v-col>
             <Melodies/>
             </v-col>
-            <!-- <v-col cols="2"/> -->
+            <v-col cols="2" v-show="$vuetify.breakpoint.lg"/>
         </v-row>
     </div>
 </template>
@@ -45,8 +39,16 @@ export default {
     padding-top:40px;
     animation: 3s ease 0s normal forwards 1 fadein;
 }
+@media (max-width:600px){
+    .shrink{
+        width:300px;
+        margin-left:60px;
+    }
+}
 #projects{
     animation: 3s ease 0s normal forwards 1 fadein;
+    /* padding-left:155px; */
+    /* padding-right:155px; */
 }
 
 @keyframes fadein {

@@ -41,6 +41,7 @@ export default {
   position:relative;
   top:11px;
 }
+
 .social-icon{
   margin-right:10px;
 }
@@ -58,10 +59,19 @@ export default {
     font-size:22px;
     padding-left:15px;
     vertical-align: middle;
+    white-space: nowrap;
+}
+@media (max-width:600px){
+    .name{
+        padding-left:0px;
+    }
+    .contact{
+      margin-top:45px;
+    }
 }
 .contact{
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-  font-weight:200;
+  font-weight:180;
   font-size:22px;
   background: none;
   outline: none;
