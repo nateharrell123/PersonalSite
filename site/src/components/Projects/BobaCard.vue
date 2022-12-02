@@ -1,19 +1,8 @@
 <template>
-<!-- <v-card color="#32363b" id="melody-card">
-    <v-row class="ma-0 pa-0">
-      <v-col>
-        <span class="center" id="text-2">Melodies.to </span>
-      </v-col>
-    </v-row>
-    <v-row class="ma-0 pa-0">
-        <p class="desc" id="text">A web app that that creates AI generated Melodies.</p>
-    </v-row>
-</v-card> -->
 <div class="container">
-  <v-card color="#222" class="card">
+  <v-card color="#edce7f" class="card">
     <div class="imgbox">
-      <!-- <i class="fab fa-angular"></i> -->
-      <v-img src="@/assets/note.png" alt="nate" class="fab fa-angular"
+      <v-img src="@/assets/tea.png" alt="nate" class="boba-img"
       max-width="80"
       >
       </v-img>
@@ -24,13 +13,20 @@
       <v-col>
         <div class="content">
           <h3 id="angular">
-            MELODIES.TO
+            Boba Cafe (Concept)
           </h3>
-          <p id="text-2">Melodies.to is a web application
-            that creates AI generated melodies.
+          <p id="text-2">Boba Cafe is a milk tea shop, 
+            specializing in yummy "Boba" tea.
           </p>
-          <a @click="toMelodies"> Visit </a>
         </div>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="2"/>
+      <v-col>
+          <v-btn @click="toBoba" class="btn">
+            Visit
+          </v-btn>
       </v-col>
     </v-row>
   </v-card>
@@ -39,10 +35,10 @@
 
 <script>
 export default {
-    name: "Melodies",
+    name: "BobaCard",
     methods: {
-        toMelodies(){
-            window.open('https://melodies.to')
+        toBoba(){
+            this.$router.push('Boba');
         }
     }
 }
@@ -53,9 +49,12 @@ export default {
     margin: 0 auto;
 }
 #text-2{
-  background-image: linear-gradient(45deg, #eb1e82, #f88d30);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color:#4f3f30;
+}
+.btn{
+  margin-left:27px;
+  position: relative;
+  bottom:30px;
 }
 .desc{
     text-align: center;
@@ -107,29 +106,13 @@ export default {
   margin-left:20px;
 }
 #angular{
-  background-image: linear-gradient(45deg, #eb1e82, #f88d30);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.card .content a{
-  /* display:inline-block; */
-  font-size:0.9em;
-  /* margin-top:10px; */
-  border-radius:5px;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight:400;
-  color:#fff;
-  background:linear-gradient(90deg, #f403d4, #f44141, #ddca1b, #f403d4);
-  background-size:400%;
-  z-index:1;
-}
-.card .content #angular{
-  color:#ff5165;
-  text-transform:uppercase;
+  color:#dc6f56;
 }
 .card .content a:hover{
   animation: animate 8s linear infinite;
+}
+.boba-img{
+filter: invert(63%) sepia(91%) saturate(2715%) hue-rotate(326deg) brightness(94%) contrast(82%);
 }
 
 @keyframes animate{

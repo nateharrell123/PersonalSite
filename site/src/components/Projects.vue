@@ -13,7 +13,7 @@
             <Melodies/>
             </v-col>
             <v-col>
-            <Melodies/>
+                <BobaCard/>
             </v-col>
             <v-col cols="2" v-show="$vuetify.breakpoint.lg"/>
         </v-row>
@@ -22,10 +22,13 @@
 
 <script>
 import Melodies from "./Projects/Melodies.vue"
+import BobaCard from "./Projects/BobaCard.vue"
+
 export default {
     name: "Projects",
     components: {
         Melodies,
+        BobaCard
     }
 }
 </script>
@@ -47,8 +50,6 @@ export default {
 }
 #projects{
     animation: 3s ease 0s normal forwards 1 fadein;
-    /* padding-left:155px; */
-    /* padding-right:155px; */
 }
 
 @keyframes fadein {

@@ -125,7 +125,7 @@ export default {
     letter-spacing: 1px;
 	padding: 0;
 	margin: 0;
-	margin-left: 32.8%;
+	margin-left: 33%;
 	transform: translateX(-200%);
 	opacity: 0;
 	animation: slide-in-anim 1.5s ease-out forwards;
