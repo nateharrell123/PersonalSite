@@ -13,7 +13,7 @@
       <v-col>
         <div class="content">
           <h3 id="angular">
-            Boba Cafe (Concept)
+            Boba Cafe (Concept website)
           </h3>
           <p id="text-2">Boba Cafe is a milk tea shop, 
             specializing in yummy "Boba" tea.
@@ -54,7 +54,7 @@ export default {
 .btn{
   margin-left:27px;
   position: relative;
-  bottom:33px;
+  bottom:38px;
 }
 .desc{
     text-align: center;
