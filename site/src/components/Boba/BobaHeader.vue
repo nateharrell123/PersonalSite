@@ -1,6 +1,6 @@
 <template>
 <div>
-    Boba Header
+    x
 </div>    
 </template>
 

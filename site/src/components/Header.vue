@@ -72,6 +72,7 @@ export default {
 .contact{
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
   font-weight:180;
+  letter-spacing: 2px;
   font-size:22px;
   background: none;
   outline: none;

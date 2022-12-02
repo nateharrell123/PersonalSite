@@ -54,7 +54,7 @@ export default {
 .btn{
   margin-left:27px;
   position: relative;
-  bottom:30px;
+  bottom:33px;
 }
 .desc{
     text-align: center;
