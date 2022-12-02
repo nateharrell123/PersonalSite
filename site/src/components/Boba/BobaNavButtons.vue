@@ -1,32 +1,42 @@
 <template>
     <div>
-        <v-row class="nav-buttons">
+        <v-row>
             <v-col align="center">
-                <v-btn color="#dc6f56" rounded>
+                <v-btn color="#dc6f56" rounded class="nav-buttons">
                     <span class="button-text-color">Home</span>
                 </v-btn>
-            </v-col>
-            <v-col align="center">
-                <v-btn color="#dc6f56" rounded>
-                    <span class="button-text-color">Home</span>
+                <v-btn color="#dc6f56" rounded class="nav-buttons">
+                    <span class="button-text-color">Menu</span>
+                </v-btn>
+                <v-btn color="#dc6f56" rounded class="nav-buttons">
+                    <span class="button-text-color">About</span>
                 </v-btn>
             </v-col>
         </v-row>
+        <BobaCarousel/>
     </div>
 </template>
 
 <script>
+import BobaCarousel from "@/components/Boba/BobaCarousel.vue"
+
 export default {
     name: "BobaNavButtons",
+    components: {
+        BobaCarousel,
+    }
 }
 </script>
 
 <style scoped>
 .button-text-color{
-    color: #4f3f30;
+    /* color: #4f3f30; */
+    color:white;
     font-weight:700;
     font-size:16px;
 }
 .nav-buttons{
+    margin-right:10px;
+    margin-left:10px;
 }
 </style>

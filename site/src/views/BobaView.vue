@@ -13,7 +13,7 @@ export default {
     name: "BobaView",
     components: {
       BobaHeader,
-      BobaNavButtons
+      BobaNavButtons,
     }
 }
 </script>

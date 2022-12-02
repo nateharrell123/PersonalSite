@@ -1,5 +1,8 @@
 <template>
   <div class="container">
+    <v-btn @click="backHome" icon class="back-icon">
+    <v-icon x-large>mdi-arrow-left-circle-outline</v-icon>
+    </v-btn>
     <v-row class="ma-0 pa-0">
       <v-col align="center" class="pb-0">
         <v-img
@@ -22,6 +25,11 @@
 <script>
 export default {
   name: "BobaHeader",
+  methods: {
+    backHome(){
+        this.$router.push('/');
+    }
+  }
 };
 </script>
 
@@ -39,5 +47,19 @@ export default {
     brightness(94%) contrast(82%);
 }
 .container{
+    
+}
+.back-icon{
+    position:relative;
+    right:50px;
+    bottom:10px;
+}
+@media (max-width:980px){
+.back-icon{
+        position:relative;
+        /* top:300px; */
+        left:1px;
+        top:2px;
+    }
 }
 </style>

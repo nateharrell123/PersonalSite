@@ -56,6 +56,13 @@ export default {
   position: relative;
   bottom:38px;
 }
+@media (max-width:980px){
+.btn{
+        margin-left:27px;
+        position:relative;
+        bottom:49px;
+    }
+}
 .desc{
     text-align: center;
 }
