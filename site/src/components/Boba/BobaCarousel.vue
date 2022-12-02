@@ -1,17 +1,16 @@
 <template>
-  <v-row>
-    <v-col align="center" class="ma-0 pa-0">
+  <!-- <v-row> -->
+    <!-- <v-col align="center" class="ma-0 pa-0"> -->
       <v-carousel hide-delimiters class="carousel">
         <v-carousel-item src="https://picsum.photos/id/42/3600/3600">
-        <v-row
-            class="fill-height"
-            align="center"
-            justify="center"
-          >
-        <v-btn id="fade-in" width="250" height="70" rounded class="nav-buttons">
-            <span class="button-text-color">ORDER NOW</span>
-        </v-btn>
-          </v-row>
+        <v-row align="center" justify="center">
+                <span class="greeting">THE BEST TEA AROUND.</span>
+        </v-row>
+        <v-row align="center" justify="center">
+            <v-btn id="fade-in" width="250" height="70" rounded class="nav-buttons">
+                <span class="button-text-color">ORDER NOW</span>
+            </v-btn>
+        </v-row>
         </v-carousel-item>
         <v-carousel-item
           v-for="(item, i) in items"
@@ -19,8 +18,8 @@
           :src="item.src"
         ></v-carousel-item>
       </v-carousel>
-    </v-col>
-  </v-row>
+    <!-- </v-col> -->
+  <!-- </v-row> -->
 </template>
 
 <script>
@@ -66,6 +65,11 @@ export default {
 }
 .nav-buttons:hover .button-text-color{
     color:#dc6f56 !important;
+}
+.greeting{
+    font-size:48px;
+    font-weight:800;
+    color:white;
 }
 @keyframes fadein {
   0% {
