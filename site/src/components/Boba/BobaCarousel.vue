@@ -2,11 +2,6 @@
   <v-row>
     <v-col align="center" class="ma-0 pa-0">
       <v-carousel hide-delimiters class="carousel">
-        <v-carousel-item
-          v-for="(item, i) in items"
-          :key="i"
-          :src="item.src"
-        ></v-carousel-item>
         <v-carousel-item src="https://picsum.photos/id/42/3600/3600">
         <v-row
             class="fill-height"
@@ -18,6 +13,11 @@
         </v-btn>
           </v-row>
         </v-carousel-item>
+        <v-carousel-item
+          v-for="(item, i) in items"
+          :key="i"
+          :src="item.src"
+        ></v-carousel-item>
       </v-carousel>
     </v-col>
   </v-row>
