@@ -8,7 +8,7 @@
             align="center"
             justify="center"
           >
-        <v-btn width="250" height="70" rounded class="nav-buttons">
+        <v-btn id="fade-in" width="250" height="70" rounded class="nav-buttons">
             <span class="button-text-color">ORDER NOW</span>
         </v-btn>
           </v-row>
@@ -48,6 +48,9 @@ export default {
 .carousel {
   margin-top: 30px;
 }
+#fade-in{
+    animation: 3s ease 0s normal forwards 1 fadein;
+}
 .button-text-color{
     /* color: #4f3f30; */
     color:white;
@@ -63,5 +66,16 @@ export default {
 }
 .nav-buttons:hover .button-text-color{
     color:#dc6f56 !important;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>

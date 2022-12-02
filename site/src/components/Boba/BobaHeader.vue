@@ -46,8 +46,8 @@ export default {
   filter: invert(63%) sepia(91%) saturate(2715%) hue-rotate(326deg)
     brightness(94%) contrast(82%);
 }
-.container{
-    
+#fade-in{
+    animation: 3s ease 0s normal forwards 1 fadein;
 }
 .back-icon{
     position:relative;
@@ -61,5 +61,16 @@ export default {
         left:1px;
         top:2px;
     }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-row>
+        <v-row id="fade-in">
             <v-col align="center">
                 <v-btn color="#dc6f56" rounded class="nav-buttons">
                     <span class="button-text-color">Home</span>
@@ -35,8 +35,22 @@ export default {
     font-weight:700;
     font-size:16px;
 }
+#fade-in{
+    animation: 3s ease 0s normal forwards 1 fadein;
+}
 .nav-buttons{
     margin-right:10px;
     margin-left:10px;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>
