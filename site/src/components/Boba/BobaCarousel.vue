@@ -1,18 +1,8 @@
 <template>
   <!-- <v-row> -->
     <!-- <v-col align="center" class="ma-0 pa-0"> -->
-      <v-carousel hide-delimiters class="carousel">
+      <v-carousel hide-delimiters class="carousel" :show-arrows="false" v-model="model">
         <v-carousel-item src="https://picsum.photos/id/42/3600/3600">
-        <!-- <div class="container">
-            <div class="greeting">
-              THE BEST TEA AROUND.
-            </div>
-            <div>
-              <v-btn id="fade-in" width="250" height="70" rounded class="nav-buttons">
-                  <span class="button-text-color">ORDER NOW</span>
-              </v-btn>
-            </div>
-        </div> -->
           <v-row
             class="fill-height"
             align="center"
@@ -30,11 +20,17 @@
           </v-row>
 
         </v-carousel-item>
-        <v-carousel-item
+        <!-- <v-carousel-item
           v-for="(item, i) in items"
           :key="i"
           :src="item.src"
-        ></v-carousel-item>
+        ></v-carousel-item> -->
+        <v-carousel-item>
+          Menu
+        </v-carousel-item>
+        <v-carousel-item>
+          About
+        </v-carousel-item>
       </v-carousel>
     <!-- </v-col> -->
   <!-- </v-row> -->
@@ -56,8 +52,15 @@ export default {
           src: "https://picsum.photos/id/237/2400/2400",
         },
       ],
+    model: 0
     };
   },
+  props: ['screen'],
+  watch: {
+    screen(newVal){
+      this.model = newVal;
+    }
+  }
 };
 </script>
 
@@ -92,10 +95,13 @@ export default {
 }
 .greeting{
     font-size:48px;
+    letter-spacing: 2px;
     font-weight:800;
+    padding-bottom:90px;
     color:white;
     text-align: center; /* ???? */
     float:right;
+    font-family: 'Passion One' serif;
     text-shadow: rgb(0 0 0 / 40%) 0px 2px 5px;
 }
 @keyframes fadein {
