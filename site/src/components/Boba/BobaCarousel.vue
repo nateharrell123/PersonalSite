@@ -9,7 +9,7 @@
             justify="center"
           >
             <div class="text-h2">
-             <span class="greeting"> THE BEST TEA AROUND.</span>
+             <span id="fade-in" class="greeting"> THE BEST TEA AROUND.</span>
              <div style="padding-bottom:120px;"/>
             <div class="under" style="text-align:center;">
               <v-btn id="fade-in" width="250" height="70" rounded class="nav-buttons">
@@ -75,7 +75,7 @@ export default {
   text-align: center;
 }
 #fade-in{
-    animation: 3s ease 0s normal forwards 1 fadein;
+    animation: 1.5s ease 0s normal forwards 1 fadein;
 }
 .button-text-color{
     /* color: #4f3f30; */
