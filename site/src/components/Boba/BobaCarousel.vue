@@ -3,14 +3,15 @@
     <!-- <v-col align="center" class="ma-0 pa-0"> -->
       <v-carousel hide-delimiters class="carousel">
         <v-carousel-item src="https://picsum.photos/id/42/3600/3600">
-        <v-row align="center" justify="center">
-                <span class="greeting">THE BEST TEA AROUND.</span>
-        </v-row>
-        <v-row align="center" justify="center">
-            <v-btn id="fade-in" width="250" height="70" rounded class="nav-buttons">
-                <span class="button-text-color">ORDER NOW</span>
-            </v-btn>
-        </v-row>
+            <div class="greeting">THE BEST TEA AROUND.
+              
+            </div>
+            <div>
+              <v-btn id="fade-in" width="250" height="70" rounded class="nav-buttons">
+                  <span class="button-text-color">ORDER NOW</span>
+              </v-btn>
+            </div>
+
         </v-carousel-item>
         <v-carousel-item
           v-for="(item, i) in items"
@@ -55,10 +56,16 @@ export default {
     color:white;
     font-weight:700;
     font-size:24px;
+    
 }
 .nav-buttons{
     transition: background .5s;
     background-color: #dc6f56 !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .nav-buttons:hover{
     background-color:white !important;
