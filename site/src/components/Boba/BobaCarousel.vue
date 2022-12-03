@@ -3,14 +3,31 @@
     <!-- <v-col align="center" class="ma-0 pa-0"> -->
       <v-carousel hide-delimiters class="carousel">
         <v-carousel-item src="https://picsum.photos/id/42/3600/3600">
-            <div class="greeting">THE BEST TEA AROUND.
-              
+        <!-- <div class="container">
+            <div class="greeting">
+              THE BEST TEA AROUND.
             </div>
             <div>
               <v-btn id="fade-in" width="250" height="70" rounded class="nav-buttons">
                   <span class="button-text-color">ORDER NOW</span>
               </v-btn>
             </div>
+        </div> -->
+          <v-row
+            class="fill-height"
+            align="center"
+            justify="center"
+          >
+            <div class="text-h2">
+             <span class="greeting"> THE BEST TEA AROUND.</span>
+             <div style="padding-bottom:120px;"/>
+            <div class="under" style="text-align:center;">
+              <v-btn id="fade-in" width="250" height="70" rounded class="nav-buttons">
+                  <span class="button-text-color">ORDER NOW</span>
+              </v-btn>
+            </div>
+            </div>
+          </v-row>
 
         </v-carousel-item>
         <v-carousel-item
@@ -48,6 +65,12 @@ export default {
 .carousel {
   margin-top: 30px;
 }
+.inner{
+  position:relative;
+}
+.container{
+  text-align: center;
+}
 #fade-in{
     animation: 3s ease 0s normal forwards 1 fadein;
 }
@@ -56,16 +79,10 @@ export default {
     color:white;
     font-weight:700;
     font-size:24px;
-    
 }
 .nav-buttons{
     transition: background .5s;
     background-color: #dc6f56 !important;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 .nav-buttons:hover{
     background-color:white !important;
@@ -77,6 +94,9 @@ export default {
     font-size:48px;
     font-weight:800;
     color:white;
+    text-align: center; /* ???? */
+    float:right;
+    text-shadow: rgb(0 0 0 / 40%) 0px 2px 5px;
 }
 @keyframes fadein {
   0% {
