@@ -3,6 +3,7 @@
   <BobaHeader/>
   <BobaNavButtons/>
   <BobaMission/>
+  <BobaImages/>
 </div>
 </template>
 
@@ -10,13 +11,15 @@
 import BobaHeader from "../components/Boba/BobaHeader.vue"
 import BobaNavButtons from "../components/Boba/BobaNavButtons.vue"
 import BobaMission from "../components/Boba/BobaMission.vue"
+import BobaImages from "../components/Boba/BobaImages.vue"
 
 export default {
     name: "BobaView",
     components: {
       BobaHeader,
       BobaNavButtons,
-      BobaMission
+      BobaMission,
+      BobaImages
     }
 }
 </script>

@@ -72,9 +72,6 @@ export default {
 </script>
 
 <style scoped>
-.v-btn:active{
-    color:blue;
-}
 .button-text-color{
     /* color: #4f3f30; */
     color:white;
