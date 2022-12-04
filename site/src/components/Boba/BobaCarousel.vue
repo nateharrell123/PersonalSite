@@ -26,10 +26,10 @@
           :src="item.src"
         ></v-carousel-item> -->
         <v-carousel-item>
-          Menu
+          <Menu/>
         </v-carousel-item>
         <v-carousel-item>
-          About
+          <BobaAbout/>
         </v-carousel-item>
       </v-carousel>
     <!-- </v-col> -->
@@ -37,6 +37,9 @@
 </template>
 
 <script>
+import Menu from "../Boba/Menu.vue"
+import BobaAbout from "../Boba/BobaAbout.vue"
+
 export default {
   name: "BobaCarousel",
   data() {
@@ -55,6 +58,10 @@ export default {
     model: 0
     };
   },
+  components: {
+    Menu,
+    BobaAbout,
+  },
   props: ['screen'],
   watch: {
     screen(newVal){
@@ -67,6 +74,8 @@ export default {
 <style scoped>
 .carousel {
   margin-top: 30px;
+  /* border: px solid black; */
+  box-shadow:0 5px 15px rgba(0,0,0, 0.5);
 }
 .inner{
   position:relative;
@@ -75,7 +84,7 @@ export default {
   text-align: center;
 }
 #fade-in{
-    animation: 1.5s ease 0s normal forwards 1 fadein;
+    animation: 1s ease 0s normal forwards 1 fadein;
 }
 .button-text-color{
     /* color: #4f3f30; */

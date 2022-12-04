@@ -10,10 +10,10 @@
         <v-row class="shrink" id="projects">
             <v-col cols="2" v-show="$vuetify.breakpoint.lg"/>
             <v-col>
-            <Melodies/>
+                <BobaCard/>
             </v-col>
             <v-col>
-                <BobaCard/>
+            <Melodies/>
             </v-col>
             <v-col cols="2" v-show="$vuetify.breakpoint.lg"/>
         </v-row>

@@ -36,7 +36,7 @@ export default {
     name: "BobaNavButtons",
     data(){
         return{
-            isHome: true,
+            isHome: false,
             isMenu: false,
             isAbout: false,
             model: 0,
@@ -82,7 +82,7 @@ export default {
     font-size:16px;
 }
 #fade-in{
-    animation: 3s ease 0s normal forwards 1 fadein;
+    animation: 1s ease 0s normal forwards 1 fadein;
 }
 .nav-buttons{
     margin-right:10px;
