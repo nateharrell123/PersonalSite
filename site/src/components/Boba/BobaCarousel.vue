@@ -20,15 +20,10 @@
           </v-row>
 
         </v-carousel-item>
-        <!-- <v-carousel-item
-          v-for="(item, i) in items"
-          :key="i"
-          :src="item.src"
-        ></v-carousel-item> -->
         <v-carousel-item>
           <Menu/>
         </v-carousel-item>
-        <v-carousel-item>
+        <v-carousel-item src="https://picsum.photos/id/330/3600/3600">
           <BobaAbout/>
         </v-carousel-item>
       </v-carousel>
