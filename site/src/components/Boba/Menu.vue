@@ -45,7 +45,7 @@ export default {
 
 <style scoped>
 .menu-title{
-    font-size:64px;
+    font-size:50px;
     font-weight:400;
 }
 .menu-container{

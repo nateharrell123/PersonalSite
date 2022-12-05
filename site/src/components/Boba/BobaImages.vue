@@ -44,7 +44,7 @@ export default {
     margin-top:200px;
 }
 .tea-title{
-    font-size:22px;
+    font-size:20px;
     font-weight:bold;
     margin-top:20px;
 }

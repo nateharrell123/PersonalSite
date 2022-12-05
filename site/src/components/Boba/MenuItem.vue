@@ -41,7 +41,7 @@ export default {
     float:right;
 }
 .menu-item-title{
-    font-size:28px;
+    font-size:22px;
     font-weight:bold;
     margin-top:20px;
     border-bottom: 1px solid black;
