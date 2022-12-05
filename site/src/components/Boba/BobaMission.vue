@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <div class="container">
         <v-row class="mission-container">
             <v-col cols="2"/>
-            <v-col cols="3" class="ml-2">
+            <v-col cols="3" class="ml-2"  v-show="$vuetify.breakpoint.lg">
             <v-img width="311" height="482" src="https://picsum.photos/id/225/2400/2400" alt="nate"
                 class="nate">
             </v-img>
@@ -13,7 +13,7 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate obcaecati eius nobis illum harum maxime perspiciatis eligendi,
                     <br/>
                     <br/>
-                    Illo corrupti suscipit laudantium veritatis quos non qui consectetur libero quod tempora aliquam dolor sit amet.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio ad deserunt totam possimus autem, tenetur sit minima modi corrupti, ducimus voluptatem nulla quam hic obcaecati provident qui explicabo soluta nam.
                 </v-col>
                 <v-col>
                 <v-btn @click="aboutClick" x-large
@@ -50,6 +50,9 @@ export default {
 .nate{
     background-size:100%;
 }
+.nav-buttons{
+    margin-top:30px;
+}
 .button-text-color{
     color:white;
     font-weight:700;
@@ -59,7 +62,7 @@ export default {
     margin-left:20px;
 }
 .title{
-    font-size:64px !important;
+    font-size:48px !important;
     margin-top:30px;
     text-align: left;
     margin-left:3px;
@@ -70,6 +73,6 @@ export default {
     margin-top:40px;
     font-family: 'Passion One' serif;
     font-weight:400;
-    font-size:20px;
+    font-size:17px;
 }
 </style>

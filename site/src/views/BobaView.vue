@@ -4,6 +4,7 @@
   <BobaNavButtons/>
   <BobaMission/>
   <BobaImages/>
+  <BobaFooter/>
 </div>
 </template>
 
@@ -12,6 +13,7 @@ import BobaHeader from "../components/Boba/BobaHeader.vue"
 import BobaNavButtons from "../components/Boba/BobaNavButtons.vue"
 import BobaMission from "../components/Boba/BobaMission.vue"
 import BobaImages from "../components/Boba/BobaImages.vue"
+import BobaFooter from "../components/Boba/BobaFooter.vue"
 
 export default {
     name: "BobaView",
@@ -19,7 +21,8 @@ export default {
       BobaHeader,
       BobaNavButtons,
       BobaMission,
-      BobaImages
+      BobaImages,
+      BobaFooter
     }
 }
 </script>
