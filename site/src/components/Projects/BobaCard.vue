@@ -15,8 +15,8 @@
           <h3 id="angular">
             Boba Cafe (Concept website)
           </h3>
-          <p id="text-2">Boba Cafe is a milk tea shop, 
-            specializing in yummy "Boba" tea.
+          <p id="text-2">Boba Cafe is a concept website 
+            for Boba milk tea.
           </p>
         </div>
       </v-col>
