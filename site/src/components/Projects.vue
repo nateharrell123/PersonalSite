@@ -17,18 +17,27 @@
             </v-col>
             <v-col cols="2" v-show="$vuetify.breakpoint.lg"/>
         </v-row>
+        <v-row class="shrink" id="projects">
+            <v-col cols="2" v-show="$vuetify.breakpoint.lg"/>
+            <v-col>
+                <BankCard/>
+            </v-col>
+            <v-col cols="2" v-show="$vuetify.breakpoint.lg"/>
+        </v-row>
     </div>
 </template>
 
 <script>
 import Melodies from "./Projects/Melodies.vue"
 import BobaCard from "./Projects/BobaCard.vue"
+import BankCard from "./Projects/BankCard.vue"
 
 export default {
     name: "Projects",
     components: {
         Melodies,
-        BobaCard
+        BobaCard,
+        BankCard
     }
 }
 </script>
