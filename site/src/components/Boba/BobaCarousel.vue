@@ -1,7 +1,7 @@
 <template>
   <!-- <v-row> -->
     <!-- <v-col align="center" class="ma-0 pa-0"> -->
-      <v-carousel hide-delimiters class="carousel" :show-arrows="false" v-model="model">
+      <v-carousel height="550" hide-delimiters class="carousel" :show-arrows="false" v-model="model">
         <v-carousel-item src="https://picsum.photos/id/42/3600/3600">
           <v-row
             class="fill-height"
