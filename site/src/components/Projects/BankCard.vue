@@ -1,8 +1,8 @@
 <template>
 <div class="container">
-  <v-card color="#edce7f" class="card">
+  <v-card color="#1eb88f" class="card">
     <div class="imgbox">
-      <v-img src="@/assets/tea.png" alt="nate" class="boba-img"
+      <v-img src="@/assets/bank/circle-icon.png" alt="nate" class="boba-img"
       max-width="80"
       >
       </v-img>
@@ -13,10 +13,10 @@
       <v-col>
         <div class="content">
           <h3 id="angular">
-            Boba Cafe (Concept website)
+            WeBank (Concept website)
           </h3>
-          <p id="text-2">Boba Cafe is a concept website 
-            for Boba milk tea.
+          <p id="desc">WeBank is a concept website 
+            for all your digital banking needs.
           </p>
         </div>
       </v-col>
@@ -24,7 +24,7 @@
     <v-row>
       <v-col cols="2"/>
       <v-col>
-          <v-btn @click="toBoba" class="btn">
+          <v-btn @click="toBank" class="btn">
             Visit
           </v-btn>
       </v-col>
@@ -35,10 +35,10 @@
 
 <script>
 export default {
-    name: "BobaCard",
+    name: "BankCard",
     methods: {
-        toBoba(){
-            this.$router.push('Boba');
+        toBank(){
+            this.$router.push('Bank');
         }
     }
 }
@@ -48,20 +48,8 @@ export default {
     display:table;
     margin: 0 auto;
 }
-#text-2{
-  color:#4f3f30;
-}
-.btn{
-  margin-left:27px;
-  position: relative;
-  bottom:38px;
-}
-@media (max-width:980px){
-.btn{
-        margin-left:27px;
-        position:relative;
-        bottom:49px;
-    }
+#desc{
+  color:white;
 }
 .desc{
     text-align: center;
@@ -113,13 +101,22 @@ export default {
   margin-left:20px;
 }
 #angular{
-  color:#dc6f56;
+  /* background-image: linear-gradient(45deg, #eb1e82, #f88d30);
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color:white;
 }
-.card .content a:hover{
-  animation: animate 8s linear infinite;
+.card .content #angular{
+  color:white;
+  text-transform:uppercase;
+}
+.btn{
+  margin-left:27px;
+  position: relative;
+  bottom:38px;
 }
 .boba-img{
-filter: invert(63%) sepia(91%) saturate(2715%) hue-rotate(326deg) brightness(94%) contrast(82%);
+  filter:invert(1);
 }
 
 @keyframes animate{

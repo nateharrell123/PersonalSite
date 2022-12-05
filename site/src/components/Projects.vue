@@ -22,8 +22,21 @@
             <v-col>
                 <BankCard/>
             </v-col>
+            <v-col>
+                <!-- <BankCard/> -->
+            </v-col>
             <v-col cols="2" v-show="$vuetify.breakpoint.lg"/>
         </v-row>
+        <!-- <v-row class="shrink" id="projects">
+            <v-col cols="2" v-show="$vuetify.breakpoint.lg"/>
+            <v-col>
+                <BankCard/>
+            </v-col>
+            <v-col>
+                <BankCard/>
+            </v-col>
+            <v-col cols="2" v-show="$vuetify.breakpoint.lg"/>
+        </v-row> -->
     </div>
 </template>
 
