@@ -12,49 +12,22 @@
       </span>
     </v-col>
     <v-col>
-<v-menu
-      open-on-hover
-      bottom
-      offset-y
-    >
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn
-          color="primary"
-          dark
-          v-bind="attrs"
-          v-on="on"
-        >
-          Dropdown
-        </v-btn>
-      </template>
-
-      <v-list>
-        <v-list-item
-          v-for="(item, index) in items"
-          :key="index"
-        >
-          <v-list-item-title>{{ item.title }}</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-menu>
+        <BankMenuItem/>
     </v-col>
     </v-row>    
 </template>
 
-
-
 <script>
+import BankMenuItem from "../Bank/BankMenuItem.vue"
 export default {
     name: "BankHeader",
     data(){
         return{
-            items: [
-                { title: 'Click Me' },
-                { title: 'Click Me' },
-                { title: 'Click Me' },
-                { title: 'Click Me 2' },
-            ],
+
         }
+    },
+    components: {
+        BankMenuItem
     }
 }
 </script>
