@@ -1,9 +1,10 @@
 <template>
-    <v-row class="header " justify="center" align="center">
+    <v-row class="header" justify="center" align="center">
     <v-col class="ma-2 mb-0" cols="2">
       <v-avatar size="60px">
       <v-img src="@/assets/bank/circle-icon.png" class="bank-img"
       max-width="60"
+      @click="toHome"
       >
       </v-img>
       </v-avatar>
@@ -12,15 +13,20 @@
       </span>
     </v-col>
     <v-col>
-        <BankMenuItem
-        :MenuTitle="'Dashboard'"
+      <BankMenuItem :MenuTitle="'DASHBOARD'"/>
+    </v-col>
+    <v-col>
+        <BankMenuItemCollapse
+        :MenuTitle="'Accounts'"
         />
     </v-col>
     </v-row>    
 </template>
 
 <script>
+import BankMenuItemCollapse from "../Bank/BankMenuItemCollapse.vue"
 import BankMenuItem from "../Bank/BankMenuItem.vue"
+
 export default {
     name: "BankHeader",
     data(){
@@ -28,7 +34,13 @@ export default {
 
         }
     },
+    methods: {
+      toHome(){
+        this.$router.push("/").catch(()=>{});
+      }
+    },
     components: {
+        BankMenuItemCollapse,
         BankMenuItem
     }
 }
@@ -42,6 +54,7 @@ export default {
 }
 .bank-img{
     filter: invert(38%) sepia(82%) saturate(1885%) hue-rotate(211deg) brightness(99%) contrast(99%);
+    cursor: pointer;
 }
 .title{
 font-family: 'Montserrat', sans-serif;

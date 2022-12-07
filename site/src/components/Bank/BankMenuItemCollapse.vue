@@ -1,12 +1,40 @@
 <template>
+      <!-- open-on-hover -->
+<v-menu
+      class="menu"
+      v-model="menu"
+      bottom
+      offset-y
+      content-class="elevation-0"
+    >
+      <template v-slot:activator="{ on, attrs }">
         <v-btn
           class="menu-button"
           dark
-          @click="toHome"
+          v-bind="attrs"
+          v-on="on"
         >
           {{MenuTitle}}
         <v-icon>mdi-chevron-down</v-icon>
-        </v-btn>  
+        </v-btn>
+      </template>
+
+      <v-card color="white" class="item-card" width="420">
+        <v-row>
+          <v-col>
+            <div class="menu-item-title">DASHBOARD ITEMS:
+              <br/>
+            <span class="menu-item-title-desc">Dashboard items shown here:</span>
+            </div>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col>
+            Yo
+          </v-col>
+        </v-row>
+      </v-card>
+    </v-menu>    
 </template>
 
 <script>
@@ -25,11 +53,6 @@ export default {
     },
     props: {
       MenuTitle: String,
-    },
-    methods: {
-        toHome() {
-        this.$router.push("/Bank").catch(()=>{});
-        }
     }
 }
 </script>
