@@ -12,7 +12,9 @@
       </span>
     </v-col>
     <v-col>
-        <BankMenuItem/>
+        <BankMenuItem
+        :MenuTitle="'Dashboard'"
+        />
     </v-col>
     </v-row>    
 </template>
