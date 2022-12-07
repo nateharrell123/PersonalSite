@@ -12,12 +12,12 @@
         WeBank
       </span>
     </v-col>
-    <v-col>
+    <v-col cols="2">
       <BankMenuItem :MenuTitle="'DASHBOARD'"/>
     </v-col>
     <v-col>
         <BankMenuItemCollapse
-        :MenuTitle="'Accounts'"
+        :MenuTitle="'Services'"
         />
     </v-col>
     </v-row>    

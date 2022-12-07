@@ -19,25 +19,53 @@
         </v-btn>
       </template>
 
-      <v-card color="white" class="item-card" width="420">
+      <v-card color="white" class="item-card" height="275" width="420">
         <v-row>
           <v-col>
-            <div class="menu-item-title">DASHBOARD ITEMS:
+            <div class="menu-item-title">SERVICES:
               <br/>
-            <span class="menu-item-title-desc">Dashboard items shown here:</span>
+            <span class="menu-item-title-desc">Everything you need, in one spot!</span>
             </div>
           </v-col>
         </v-row>
         <v-row>
-          <v-col>
-            Yo
-          </v-col>
+          <BankMenuIconItem
+          :IconName="'mdi-bank-transfer'"
+          :Title="'Transfer funds'"
+          />
+          <BankMenuIconItem class="item-2"
+          :IconName="'mdi-credit-card-chip'"
+          :Title="'Cards'"
+          />
+        </v-row>
+        <v-row>
+          <BankMenuIconItem
+          :IconName="'mdi-cash-multiple'"
+          :Title="'Pay bills'"
+          />
+          <BankMenuIconItem class="item-2"
+          :IconName="'mdi-message-settings'"
+          :Title="'Messages'"
+          />
+        </v-row>
+        <v-row>
+          <BankMenuIconItem
+          :IconName="'mdi-account'"
+          :Title="'My accounts'"
+          />
+        </v-row>
+        <v-row>
+          <BankMenuIconItem
+          :IconName="'mdi-cash-fast'"
+          :Title="'Send money'"
+          />
         </v-row>
       </v-card>
     </v-menu>    
 </template>
 
 <script>
+import BankMenuIconItem from "../Bank/BankMenuIconItem.vue"
 export default {
     name: "BankMenuItemCollapse",
     data(){
@@ -51,6 +79,9 @@ export default {
         menu: true,
       }
     },
+    components: {
+      BankMenuIconItem,
+    },
     props: {
       MenuTitle: String,
     }
@@ -58,13 +89,9 @@ export default {
 </script>
 
 <style scoped>
-.card-item{
-    cursor:pointer;
-}
-.item-card{
-}
-.menu{
-
+.item-2{
+  position:relative;
+  right:20px;
 }
 .menu-item-title{
   color:rgb(168, 168, 168);
@@ -72,13 +99,16 @@ export default {
   font-family: 'Montserrat', sans-serif;
   font-weight:400;
   margin-top:20px;
-  margin-left:20px;
+  margin-left:25px;
 }
 .menu-item-title-desc{
   color:rgb(168, 168, 168);
   font-size:14px;
   font-family: 'Montserrat', sans-serif;
   font-weight:400;
+}
+.card-item{
+    cursor:pointer;
 }
 .v-menu__content {
   box-shadow:0 2px 15px rgba(73, 120, 251, 0.5) !important;
