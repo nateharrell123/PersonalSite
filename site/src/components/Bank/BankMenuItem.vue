@@ -5,7 +5,6 @@
           @click="toHome"
         >
           {{MenuTitle}}
-        <v-icon>mdi-chevron-down</v-icon>
         </v-btn>  
 </template>
 

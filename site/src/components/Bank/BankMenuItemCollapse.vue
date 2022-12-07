@@ -1,8 +1,7 @@
 <template>
-      <!-- open-on-hover -->
 <v-menu
       class="menu"
-      v-model="menu"
+      open-on-hover
       bottom
       offset-y
       content-class="elevation-0"
@@ -70,13 +69,6 @@ export default {
     name: "BankMenuItemCollapse",
     data(){
         return{
-      items: [
-          { title: 'Click Me' },
-          { title: 'Click Me' },
-          { title: 'Click Me' },
-          { title: 'Click Me 2' },
-        ],
-        menu: true,
       }
     },
     components: {
