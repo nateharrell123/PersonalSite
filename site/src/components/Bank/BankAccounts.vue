@@ -99,7 +99,7 @@
                                 <label>
                                     Message:
                                 </label>
-                                <v-textarea background-color="#d3d3d3" class="mt-0 pt-1">
+                                <v-textarea class="mt-0 pt-1 msg" color="#1eb88f"> <!--background-color="#1eb88f"-->
                                 </v-textarea>
                             </v-col>
                         </v-row>
@@ -134,6 +134,7 @@ export default {
     }
 
 }
+
 .contact-title{
     font-size:22px;
 }

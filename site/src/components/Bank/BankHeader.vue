@@ -1,6 +1,6 @@
 <template>
     <v-row class="header" justify="center" align="center">
-    <v-col class="ma-2 mb-0">
+    <v-col class="ma-2 mb-0" cols="2">
       <v-avatar size="60px">
       <v-img src="@/assets/bank/circle-icon.png" class="bank-img"
       max-width="60"
@@ -12,7 +12,7 @@
         WeBank
       </span>
     </v-col>
-    <v-col>
+    <v-col cols="4">
       <BankMenuItem :MenuTitle="'DASHBOARD'"/>
     </v-col>
     <v-col>
@@ -20,14 +20,9 @@
         :MenuTitle="'Services'"
         />
     </v-col>
-    <v-col>
-      <v-btn style="float:right;" color="white" class="acct-button mr-6">
-        Create an account
-      </v-btn>
-    </v-col>
     <v-col cols="1">
       <v-btn style="float:right;" color="#1eb88f" class="sign-in-button mr-6">
-        Sign in
+        FAQ
       </v-btn>
     </v-col>
     </v-row>    
@@ -58,11 +53,12 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Passion+One&display=swap');
-@media (max-width:600px){
-    .sign-in-button{
-      position:relative;
-      left:200px;
-    }
+
+@media (max-width:600px) {
+  .sign-in-button{
+    position:relative;
+    left:170px;
+  }
 }
 .sign-in-button{
   font-family: 'Montserrat', sans-serif;
