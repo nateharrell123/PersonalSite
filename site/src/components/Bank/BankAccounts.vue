@@ -99,7 +99,7 @@
                                 <label>
                                     Message:
                                 </label>
-                                <v-textarea class="mt-0 pt-1 msg" color="#1eb88f"> <!--background-color="#1eb88f"-->
+                                <v-textarea rows="4" class="mt-0 pt-1 msg" color="#1eb88f"> <!--background-color="#1eb88f"-->
                                 </v-textarea>
                             </v-col>
                         </v-row>

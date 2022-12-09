@@ -12,13 +12,14 @@
         WeBank
       </span>
     </v-col>
-    <v-col cols="4">
+    <v-col class="hotfix">
       <BankMenuItem :MenuTitle="'DASHBOARD'"/>
-    </v-col>
-    <v-col>
         <BankMenuItemCollapse
         :MenuTitle="'Services'"
         />
+      <BankMenuItem :MenuTitle="'ITEM #3'"/>
+    </v-col>
+    <v-col class="hotfix">
     </v-col>
     <v-col cols="1">
       <v-btn style="float:right;" color="#1eb88f" class="sign-in-button mr-6">
@@ -55,9 +56,9 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Passion+One&display=swap');
 
 @media (max-width:600px) {
-  .sign-in-button{
+  .hotfix{
     position:relative;
-    left:170px;
+    left:40px;
   }
 }
 .sign-in-button{
