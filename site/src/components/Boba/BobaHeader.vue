@@ -1,8 +1,12 @@
 <template>
   <div class="container">
+    <v-row>
+      <v-col>
     <v-btn @click="backHome" icon class="back-icon">
     <v-icon x-large>mdi-arrow-left-circle-outline</v-icon>
     </v-btn>
+      </v-col>
+    </v-row>
     <v-row class="ma-0 pa-0">
       <v-col align="center" class="pb-0">
         <v-img
@@ -50,17 +54,9 @@ export default {
     animation: 3s ease 0s normal forwards 1 fadein;
 }
 .back-icon{
-    position:relative;
-    right:50px;
-    bottom:10px;
-}
-@media (max-width:980px){
-.back-icon{
-        position:relative;
-        /* top:300px; */
-        left:1px;
-        top:2px;
-    }
+    position:absolute;
+    left:1px;
+    top:1px;
 }
 @keyframes fadein {
   0% {

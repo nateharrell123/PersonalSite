@@ -20,7 +20,7 @@
             <label class="label">
                 Message:
             </label>
-            <v-textarea v-if="!sent" v-model="message" class="textarea" background-color="#d3d3d3" rows="2">
+            <v-textarea v-if="!sent" v-model="message" class="textarea" background-color="#f3f4f6" rows="2">
             </v-textarea>
             <div v-else>
                 Thank you! Your message has been sent.

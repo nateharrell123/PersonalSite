@@ -63,7 +63,7 @@ export default {
 
 <style scoped>
 .footer{
-    background:rgb(243, 244, 246);
+    background:#f3f4f6;
     height:100px;
 }
 .inside{
