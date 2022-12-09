@@ -22,7 +22,7 @@
             <v-col>
                 <BankCard/>
             </v-col>
-            <v-col cols="2" v-show="$vuetify.breakpoint.lg"/>
+            <v-col cols="2" v-show="$vuetify.breakpoint.lg || $vuetify.breakpoint.xl"/>
         </v-row>
         <!-- <v-row class="shrink" id="projects">
             <v-col cols="2" v-show="$vuetify.breakpoint.lg"/>

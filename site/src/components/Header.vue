@@ -17,6 +17,8 @@
     </v-col>
     <v-col cols="2"/>
   </v-row>
+  <div id="sneaky">
+    </div>
 </div>
 </template>
 
@@ -30,7 +32,9 @@ export default {
   },
   methods: {
     contact(){
-      console.log('contact');
+      document.getElementById("sneaky").scrollIntoView({
+        behavior: "smooth"
+      });
     }
   }
 }
@@ -40,6 +44,11 @@ export default {
 .socials{
   position:relative;
   top:11px;
+}
+#sneaky{
+  position:absolute;
+  top:1050px;
+  left:500px;
 }
 
 .social-icon{

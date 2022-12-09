@@ -20,13 +20,16 @@
             <label class="label">
                 Message:
             </label>
-            <v-textarea v-model="message" class="textarea" background-color="#d3d3d3" rows="2">
+            <v-textarea v-if="!sent" v-model="message" class="textarea" background-color="#d3d3d3" rows="2">
             </v-textarea>
+            <div v-else>
+                Thank you! Your message has been sent.
+            </div>
         </v-col>
     </v-row>
     <v-row>
         <v-col>
-            <v-btn v-if="message.length > 0">
+            <v-btn class="send" @click="send" v-if="message.length > 0 && !sent">
                 Send
             </v-btn>
         </v-col>
@@ -43,6 +46,12 @@ export default {
         return{
             feedbackSubmitted: false,
             message: "",
+            sent: false,
+        }
+    },
+    methods: {
+        send(){
+            this.sent = !this.sent;
         }
     }
 }
@@ -53,6 +62,9 @@ export default {
     margin-left:18%;
     margin-right:18%;
     margin-top:5%;
+}
+.send{
+    margin-bottom:20px;
 }
 .textarea{
 

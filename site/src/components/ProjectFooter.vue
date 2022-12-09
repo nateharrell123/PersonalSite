@@ -1,25 +1,11 @@
 <template>
-    <div>
-        <v-row class="greeting-row ma-0">
-            <v-col cols="2"/>
-            <v-col cols="8">
-                <p class="text">{{greeting}}</p>
+    <div class="footer">
+        <div class="inside">
+        <v-row align="center" justify="center">
+            <v-col class="text" align="end">
+                @ Nateharrell (©2022 & beyond!)
             </v-col>
-            <v-col cols="2"/>
-        </v-row>
-        <v-row class="ma-0 pa-0">
-            <v-col cols="2"/>
-            <v-col cols="8" class="intro">
-                <v-row class="ma-0 pa-0">
-                    I'm a Software Developer &#129489;&#8205;&#128187;
-                </v-row>
-                <v-row class="ma-0 pa-0">
-                    Musician &#127925;
-                </v-row>
-                <v-row class="ma-0 pa-0">
-                    And lover of tech &#129299;
-                </v-row>
-<v-row class="socials ma-0 pa-0"> 
+<v-col class="socials ma-0 pa-0"> 
                     <svg @click="toLinkedIn" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                         class="social-icon"
                         width="30" height="30"
@@ -49,40 +35,15 @@
             <path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z">
             </path>
             </svg>
-      </v-row>
-            </v-col>
+      </v-col>
         </v-row>
+        </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: "Greeting",
-    data(){
-        return{
-            greeting: '',
-        }
-    },
-    mounted(){
-        var randomNumber = Math.floor(Math.random() * 5);
-        switch (randomNumber) {
-            case 1:
-                this.greeting = `Hey there, I'm Nate!`;
-                break;
-            case 2:
-                this.greeting = `Hello, I'm Nate!`
-                break;
-            case 3:
-                this.greeting = `Welcome, I'm Nate!`;
-                break;
-            case 4:
-                this.greeting = `Hi, I'm Nate!`;
-                break;
-            default:
-                this.greeting = `Hello there, I'm Nate!`;
-                break;
-        }
-    },
+    name: "ProjectFooter",
     methods: {
     toLinkedIn(){
         window.open('https://www.linkedin.com/in/nate-harrell/')
@@ -101,76 +62,28 @@ export default {
 </script>
 
 <style scoped>
-.greeting-row{
-    padding-top:5%;
-    padding-bottom:2%;
+.footer{
+    background:rgb(243, 244, 246);
+    height:100px;
+}
+.inside{
+    position:relative;
+    top:25px;
+}
+.text{
+    font-size:14px;
+    font-weight:100;
+}
+.socials{
+    position:relative;
+    top:3px;
+    cursor: pointer;
+    fill: black !important;
 }
 .social-icon{
-    margin-right:10px;
-    cursor:pointer;
+    margin-right: 10px;
 }
 .social-icon:hover{
     fill:#3ebbbb;
-}
-.socials{
-    padding:5px;
-    position:relative;
-    right:3px;
-    top:10px;
-    fill: black !important;
-}
-.text{
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-    font-size:40px;
-    font-weight: 800;
-    letter-spacing: 1px;
-	padding: 0;
-	margin: 0;
-	margin-left: 33%;
-	transform: translateX(-200%);
-	opacity: 0;
-	animation: slide-in-anim 1.5s ease-out forwards;
-    /* white-space: nowrap; */
-}
-.intro{
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-    font-size:18px;
-    font-weight: 500;
-    padding-top:0px !important;
-    animation: 3s ease 0s normal forwards 1 fadein;
-}
-.title{
-    padding-top:0px;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-    font-size:22px;
-    font-weight: 800;
-}
-
-@keyframes slide-in-anim {
-	20% {
-		opacity: 0;
-	}
-	60% {
-		transform: translateX(-45%);
-	}
-	75% {
-		transform: translateX(-52%);
-	}
-	100% {
-		opacity: 1;
-		transform: translateX(-50%);
-	}
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  66% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 </style>

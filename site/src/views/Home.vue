@@ -4,6 +4,7 @@
     <Greeting/>
     <Projects/>
     <ContactMe/>
+    <ProjectFooter/>
 </div>
 </template>
 
@@ -13,6 +14,7 @@ import Header from "../components/Header.vue"
 import Greeting from "../components/Greeting.vue"
 import Projects from "../components/Projects.vue"
 import ContactMe from "../components/ContactMe.vue"
+import ProjectFooter from "../components/ProjectFooter.vue"
 
 export default {
   name: "Home",
@@ -20,7 +22,8 @@ export default {
     Header,
     Greeting,
     Projects,
-    ContactMe
+    ContactMe,
+    ProjectFooter
   }
 };
 </script>
