@@ -1,6 +1,6 @@
 <template>
     <v-row class="header" justify="center" align="center">
-    <v-col class="ma-2 mb-0" cols="2">
+    <v-col class="ma-2 mb-0">
       <v-avatar size="60px">
       <v-img src="@/assets/bank/circle-icon.png" class="bank-img"
       max-width="60"
@@ -12,7 +12,7 @@
         WeBank
       </span>
     </v-col>
-    <v-col cols="2">
+    <v-col>
       <BankMenuItem :MenuTitle="'DASHBOARD'"/>
     </v-col>
     <v-col>
@@ -20,11 +20,13 @@
         :MenuTitle="'Services'"
         />
     </v-col>
-    <v-col align="end">
-      <v-btn color="white" class="acct-button mr-6">
+    <v-col>
+      <v-btn style="float:right;" color="white" class="acct-button mr-6">
         Create an account
       </v-btn>
-      <v-btn color="#1eb88f" class="sign-in-button mr-6">
+    </v-col>
+    <v-col cols="1">
+      <v-btn style="float:right;" color="#1eb88f" class="sign-in-button mr-6">
         Sign in
       </v-btn>
     </v-col>
