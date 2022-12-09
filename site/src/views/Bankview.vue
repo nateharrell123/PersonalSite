@@ -17,6 +17,9 @@ export default {
         BankHeader,
         BankAccounts,
         BankFooter
-    }
+    },
+    // mounted(){
+    //     this.$forceUpdate();
+    // },
 }
 </script>

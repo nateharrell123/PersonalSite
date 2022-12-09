@@ -1,5 +1,5 @@
 <template>
-<div class="base">
+<div class="bank-base">
     <v-row>
         <v-col class="header">
             Copyright © 2022 all rights reserved.
@@ -39,15 +39,16 @@ export default {
 </script>
 
 <style>
-.base{
+.bank-base{
     /* background: #222; */
     background: #1eb88f;
     margin-top:80px;
     height:250px;
 }
 @media (max-width:600px){
-    .base{
-        height:560px;
+    .bank-base{
+        height:460px;
+        width:440px;
     }
 }
 .socials{

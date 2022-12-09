@@ -44,6 +44,12 @@ export default {
 }
 </script>
 <style scoped>
+@media (max-width:600px) {
+  .btn{
+    position:absolute;
+    bottom:50px !important;
+  }
+}
 .center{
     display:table;
     margin: 0 auto;

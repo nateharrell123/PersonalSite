@@ -3,6 +3,7 @@
     <Header/>
     <Greeting/>
     <Projects/>
+    <ContactMe/>
 </div>
 </template>
 
@@ -11,13 +12,15 @@
 import Header from "../components/Header.vue"
 import Greeting from "../components/Greeting.vue"
 import Projects from "../components/Projects.vue"
+import ContactMe from "../components/ContactMe.vue"
 
 export default {
   name: "Home",
   components: {
     Header,
     Greeting,
-    Projects
+    Projects,
+    ContactMe
   }
 };
 </script>

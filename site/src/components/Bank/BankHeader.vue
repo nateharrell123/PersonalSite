@@ -81,6 +81,7 @@ export default {
 }
 .title{
 font-family: 'Montserrat', sans-serif;
+color:black !important;
 font-weight: 600;
 font-size:24px !important;
 letter-spacing: 2px !important;
