@@ -13,6 +13,7 @@
       </span>
     </v-col>
     <v-col>
+      <button @click="about" style="margin-left:50px;" class="contact about"> About </button>
       <button @click="contact" class="contact">Contact</button>
     </v-col>
     <v-col cols="2"/>
@@ -35,7 +36,10 @@ export default {
       document.getElementById("sneaky").scrollIntoView({
         behavior: "smooth"
       });
-    }
+    },
+    about() {
+      this.$router.push("About");
+    },
   }
 }
 </script>
@@ -75,7 +79,7 @@ export default {
         padding-left:0px;
     }
     .contact{
-      margin-top:45px;
+      margin-top:3%;
     }
 }
 .contact{
