@@ -8,9 +8,12 @@
             </v-col>
             <v-row>
                 <v-col>
-                    <v-img src="@/assets/nate.jpg"
+                    <!-- <v-img src="@/assets/nate.jpg"
                         class="nate">
-                    </v-img> 
+                    </v-img>  -->
+                    <div class="test">
+                        Yo
+                    </div>
                 </v-col>
                 <v-col>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis laborum aut reiciendis, laboriosam itaque atque culpa architecto voluptate repellat ut.
@@ -39,7 +42,14 @@
     margin-bottom:6.9%; /* nice */
 }
 .nate{
-    max-height:250px;
-    max-width:250px;
+    /* max-height:250px; */
+    /* max-width:250px; */
+    height:100%;
+    width:100%;
+}
+.test{
+    background-color:red;
+    height:100%;
+    width:100%;
 }
 </style>
