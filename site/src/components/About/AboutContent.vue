@@ -3,29 +3,53 @@
         <v-row>
             <v-col>
                 <div class="title">
-                    About me:
+                    About Me:
                 </div>           
             </v-col>
+        </v-row>
             <v-row>
-                <v-col>
-                    <!-- <v-img src="@/assets/nate.jpg"
-                        class="nate">
-                    </v-img>  -->
-                    <div class="test">
-                        Yo
-                    </div>
+                <v-col class="nate">
+                    <v-img src="@/assets/nate.jpg">
+                    </v-img> 
                 </v-col>
                 <v-col>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis laborum aut reiciendis, laboriosam itaque atque culpa architecto voluptate repellat ut.
+                    <span class="body">
+                        I am a software developer based in Kansas City, MO.
+                        I graduated from Kansas State University with a bachelor's degree
+                        in Computer Science, and currently I work full time as 
+                        an associate developer at <span @click="toCommerce" class="commerce"> Commerce Bank. </span>
+                        Beyond software engineering, I am an avid musician! If you're curious, check out my
+                        <span @click="toYouTube" class="youTube"> YouTube.</span> 
+                        ツ
+                    </span>
                 </v-col>
             </v-row>
-        </v-row>
+            <v-row>
+                <v-col>
+                <div class="title">
+                    My Tech Stack:
+                </div>  
+                </v-col>
+            </v-row>
+            <v-row>
+                <v-col>
+                    Vue
+                </v-col>
+            </v-row>
     </div>
 </template>
 
 <script>
     export default {
-        name: "AboutContent"
+        name: "AboutContent",
+        methods: {
+            toCommerce(){
+                window.open('https://www.commercebank.com/');
+            },
+            toYouTube() {
+                window.open('https://youtube.com/c/nateharrell');
+            }
+        }
     }
 </script>
 
@@ -33,19 +57,31 @@
 .content-container{
     margin-left:15%;
     margin-top:5%;
-    margin-right:15%;
+    margin-right:25%;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+.youTube{
+    color:red;
+    cursor: pointer;
+}
+.commerce{
+    color:green;
+    cursor:pointer;
+}
+.body{
+    font-weight:200;
+    font-size:18px;
+    letter-spacing: 1px;
 }
 .title{
     font-size:32px !important;
     font-weight:500;
     white-space: nowrap;
-    margin-bottom:6.9%; /* nice */
+    margin-top:5%;
 }
 .nate{
-    /* max-height:250px; */
-    /* max-width:250px; */
-    height:100%;
-    width:100%;
+    max-height:250px;
+    max-width:250px;
 }
 .test{
     background-color:red;
