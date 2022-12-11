@@ -1,5 +1,6 @@
 <template>
     <div class="content-container" id="fade-in">
+        <v-card class="content-card">
         <v-row>
             <v-col>
                 <div class="title">
@@ -36,6 +37,7 @@
                     Vue
                 </v-col>
             </v-row>
+        </v-card>
     </div>
 </template>
 
@@ -57,8 +59,11 @@
 .content-container{
     margin-left:15%;
     margin-top:5%;
-    margin-right:25%;
+    margin-right:15%;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+.content-card{
+    padding:20px;
 }
 .youTube{
     color:red;
