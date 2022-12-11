@@ -14,9 +14,9 @@
                 </v-col>
                 <v-col>
                     <span class="body">
-                        I am a software developer based in Kansas City, MO.
-                        I graduated from Kansas State University with a bachelor's degree
-                        in Computer Science, and currently I work full time as 
+                        I am a software developer based in Kansas City, MO, and
+                        graduated from Kansas State University with a bachelor's degree
+                        in Computer Science. I currently work full time as 
                         an associate developer at <span @click="toCommerce" class="commerce"> Commerce Bank. </span>
                         Beyond software engineering, I am an avid musician! If you're curious, check out my
                         <span @click="toYouTube" class="youTube"> YouTube.</span> 
