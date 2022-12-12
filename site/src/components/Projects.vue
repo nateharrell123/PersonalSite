@@ -1,0 +1,88 @@
+<template>
+    <div class="projects-container">
+        <v-row class="ma-0 pa-0">
+            <v-col cols="2"/>
+            <v-col cols="8">
+                <p class="title">Check out my projects:</p>
+            </v-col>
+            <v-col cols="2"/>
+        </v-row>
+        <v-row class="shrink" id="projects">
+            <v-col cols="2" v-show="$vuetify.breakpoint.lg || $vuetify.breakpoint.xl"/>
+            <v-col>
+                <BobaCard/>
+            </v-col>
+            <v-col>
+            <Melodies/>
+            </v-col>
+            <v-col cols="2" v-show="$vuetify.breakpoint.lg || $vuetify.breakpoint.xl"/>
+        </v-row>
+        <v-row class="shrink" id="projects">
+            <v-col cols="2" v-show="$vuetify.breakpoint.lg || $vuetify.breakpoint.xl"/>
+            <v-col>
+                <BankCard/>
+            </v-col>
+            <v-col cols="2" v-show="$vuetify.breakpoint.lg || $vuetify.breakpoint.xl"/>
+        </v-row>
+        <!-- <v-row class="shrink" id="projects">
+            <v-col cols="2" v-show="$vuetify.breakpoint.lg"/>
+            <v-col>
+                <BankCard/>
+            </v-col>
+            <v-col>
+                <BankCard/>
+            </v-col>
+            <v-col cols="2" v-show="$vuetify.breakpoint.lg"/>
+        </v-row> -->
+    </div>
+</template>
+
+<script>
+import Melodies from "./Projects/Melodies.vue"
+import BobaCard from "./Projects/BobaCard.vue"
+import BankCard from "./Projects/BankCard.vue"
+
+export default {
+    name: "Projects",
+    components: {
+        Melodies,
+        BobaCard,
+        BankCard
+    }
+}
+</script>
+
+<style scoped>
+.projects-container{
+    margin-bottom:10%;
+}
+.title{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-weight: 800;
+    font-size:28px !important;
+    letter-spacing: 1px;
+    padding-top:40px;
+    animation: 3s ease 0s normal forwards 1 fadein;
+}
+@media (max-width:600px){
+    .shrink{
+        width:300px;
+        margin-left:60px;
+    }
+}
+#projects{
+    animation: 3s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
