@@ -79,7 +79,8 @@ export default {
         padding-left:0px;
     }
     .contact{
-      margin-top:3%;
+      /* margin-top:3%; */
+      margin-top:30%;
     }
 }
 .contact{
