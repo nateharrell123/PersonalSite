@@ -2,17 +2,20 @@
     <div>
         <AboutHeader/>
         <AboutContent id="fade-in"/>
+        <ProjectFooter/>
     </div>
 </template>
 
 <script>
 import AboutHeader from "../components/About/AboutHeader.vue"
 import AboutContent from "../components/About/AboutContent.vue"
+import ProjectFooter from "../components/ProjectFooter.vue"
     export default {
         name: "AboutView",
         components: {
             AboutHeader,
-            AboutContent
+            AboutContent,
+            ProjectFooter,
         }
     }
 </script>

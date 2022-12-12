@@ -14,7 +14,7 @@
     </v-col>
     <v-col>
       <button @click="about" style="margin-left:50px;" class="contact about"> About </button>
-      <button @click="contact" class="contact">Contact</button>
+      <!-- <button @click="contact" class="contact">Contact</button> -->
     </v-col>
     <v-col cols="2"/>
   </v-row>

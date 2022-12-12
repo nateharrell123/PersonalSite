@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="projects-container">
         <v-row class="ma-0 pa-0">
             <v-col cols="2"/>
             <v-col cols="8">
@@ -53,6 +53,9 @@ export default {
 </script>
 
 <style scoped>
+.projects-container{
+    margin-bottom:10%;
+}
 .title{
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
     font-weight: 800;
