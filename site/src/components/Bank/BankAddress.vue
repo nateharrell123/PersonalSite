@@ -65,7 +65,6 @@ export default {
 .header{
     color:white;
     text-align:center;
-    font-family: 'Passion One' serif;
     font-size:12px;
 }
 </style>

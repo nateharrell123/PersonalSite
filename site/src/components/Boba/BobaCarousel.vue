@@ -102,10 +102,8 @@ export default {
     letter-spacing: 2px;
     font-weight:800;
     padding-bottom:90px;
+    padding-top:20%;
     color:white;
-    text-align: center; /* ???? */
-    float:right;
-    font-family: 'Passion One' serif;
     text-shadow: rgb(0 0 0 / 40%) 0px 2px 5px;
 }
 @keyframes fadein {

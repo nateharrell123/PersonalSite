@@ -36,11 +36,9 @@ export default {
     color:white;
     text-align: center; /* ???? */
     float:right;
-    font-family: 'Passion One' serif;
     text-shadow: rgb(0 0 0 / 40%) 0px 8px 5px;
 }
 .desc{
-    font-family: 'Passion One' serif;
     color:white;
     font-size:22px;
     text-shadow: rgb(0 0 0 / 40%) 0px 8px 5px;

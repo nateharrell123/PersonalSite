@@ -53,8 +53,6 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Passion+One&display=swap');
-
 @media (max-width:600px) {
   .hotfix{
     position:relative;

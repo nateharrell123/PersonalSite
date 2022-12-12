@@ -71,7 +71,6 @@ export default {
 .message{
     text-align:left;
     margin-top:40px;
-    font-family: 'Passion One' serif;
     font-weight:400;
     font-size:17px;
 }
