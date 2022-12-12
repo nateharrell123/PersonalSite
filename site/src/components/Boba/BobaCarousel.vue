@@ -8,7 +8,7 @@
             align="center"
             justify="center"
           >
-            <div class="text-h2" style="padding-top:12%;">
+            <div class="text-h2" style="padding-top:6%;">
              <span id="fade-in" class="greeting"> THE BEST TEA AROUND.</span>
              <div style="padding-bottom:120px;"/>
             <div class="under" style="text-align:center;">
