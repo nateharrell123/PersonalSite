@@ -72,6 +72,13 @@ export default {
     bottom:10px;
     left:10px;
 }
+@media (max-width:600px) {
+    .resume{
+        position:relative;
+        left:1px;
+        top:.5px;
+    }
+}
 .inside{
     position:relative;
     top:25px;
