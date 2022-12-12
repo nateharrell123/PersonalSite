@@ -8,7 +8,7 @@
             align="center"
             justify="center"
           >
-            <div class="text-h2">
+            <div class="text-h2" style="padding-top:12%;">
              <span id="fade-in" class="greeting"> THE BEST TEA AROUND.</span>
              <div style="padding-bottom:120px;"/>
             <div class="under" style="text-align:center;">
@@ -102,7 +102,6 @@ export default {
     letter-spacing: 2px;
     font-weight:800;
     padding-bottom:90px;
-    padding-top:20%;
     color:white;
     text-shadow: rgb(0 0 0 / 40%) 0px 2px 5px;
 }
