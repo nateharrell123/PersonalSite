@@ -80,7 +80,6 @@ export default {
 .header{
     color:white;
     text-align:center;
-    font-family: 'Passion One' serif;
     /* text-shadow: rgb(0 0 0 / 40%) 0px 2px 5px; */
     font-size:14px;
 }
