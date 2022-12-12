@@ -81,6 +81,7 @@ export default {
     color:white;
     text-align:center;
     /* text-shadow: rgb(0 0 0 / 40%) 0px 2px 5px; */
+    font-family: 'Montserrat', sans-serif;
     font-size:14px;
 }
 </style>
