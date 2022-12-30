@@ -10,10 +10,12 @@
             <v-col cols="5" class="message-cont">
                 <div class="title">Our Story</div>
                 <v-col class="message">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate obcaecati eius nobis illum harum maxime perspiciatis eligendi,
+                    Here at Boba Cafe, we strive to deliver the<strong> best </strong>tasting boba milk tea around.
                     <br/>
                     <br/>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio ad deserunt totam possimus autem, tenetur sit minima modi corrupti, ducimus voluptatem nulla quam hic obcaecati provident qui explicabo soluta nam.
+                    We started out as a small local business, but have grown thanks to all our customers support.
+                    We appreciate each and every one of you taking the time to check out our tea, and we
+                    hope you absolutely <strong> love </strong> it!
                 </v-col>
                 <v-col>
                 <v-btn @click="aboutClick" x-large

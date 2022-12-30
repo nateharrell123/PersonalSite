@@ -9,25 +9,25 @@
             <v-col cols="5" class="menu-container ml-auto">
                 <MenuItem :Picture="'https://picsum.photos/id/225/1280/1280'" 
                 :Price="8"
-                :Title="'Tea Item #1'"
-                :Desc="'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'"
+                :Title="'Hibiscus Tea'"
+                :Desc="'Hot Hibiscus tea, freshly made in house.'"
                 />
                 <MenuItem :Picture="'https://picsum.photos/id/312/1280/1280'" 
                 :Price="7.95"
-                :Title="'Tea Item #2'"
-                :Desc="'Debitis aliquam voluptate repellendus fugiat. Velit accusantium doloremque neque.'"
+                :Title="'Honey tea'"
+                :Desc="'Our famous Honey Tea, served hot. Perfect for a rainy day.'"
                 />
             </v-col>
             <v-col cols="1"/>
             <v-col cols="5" class="menu-container mr-auto">
                 <MenuItem :Picture="'https://picsum.photos/id/326/1280/1280'" 
                 :Price="12"
-                :Desc="'Incidunt dignissimos modi ducimus non, maxime eligendi error quidem repellendus, ipsam earum soluta.'"
-                :Title="'Tea Item #3'"/>
+                :Desc="'Fresh squeezed lemon tea, served hot or cold.'"
+                :Title="'Lemon Tea'"/>
                 <MenuItem :Picture="'https://picsum.photos/id/365/1280/1280'" 
                 :Price="6"
-                :Desc="'Maxime eligendi error quidem repellendus, ipsam earum soluta.'"
-                :Title="'Tea Item #4'"/>
+                :Desc="'Fresh lavender tea made with simple syrup.'"
+                :Title="'Lavender Tea'"/>
             </v-col>
         </v-row>
     </div>

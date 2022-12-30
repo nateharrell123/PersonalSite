@@ -8,13 +8,14 @@
         <v-row>
             <v-col cols="2"/>
             <v-col cols="8" class="desc">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione minima modi aspernatur aut. Reprehenderit quae nam quidem suscipit necessitatibus quo.
+                Here at Boba Cafe, we strive to make the best tea possible for our customers.
                 <br/>
                 <br/>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat non, saepe mollitia fuga commodi fugit labore impedit asperiores cum culpa adipisci facere ea velit, vero tenetur placeat. Perspiciatis, necessitatibus excepturi!
+                <br/>
+                We treat every drink as a special experience for our customers to enjoy, and we hope that our tea will help you get through whatever life throws at you.
                 <br/>
                 <br/>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque eveniet ut accusamus itaque laborum non quas iste incidunt labore? Fuga tempora corporis delectus cumque a vel doloremque veniam saepe modi sint atque, quam maxime inventore.
+                We use only the best ingredients, for the best customers. Everything is made in-house to ensure the best quality for you.
             </v-col>
             <v-col cols="2"/>
         </v-row>

@@ -5,19 +5,19 @@
       <v-img src="https://picsum.photos/id/225/3600/3600" alt="nate"
         class="img">
       </v-img>
-            <div class="tea-title">Tea Item #1 </div>
+            <div class="tea-title">Hibiscus Tea</div>
         </v-col>
         <v-col align="center">
       <v-img src="https://picsum.photos/id/365/3600/3600" alt="nate"
         class="img">
       </v-img>
-        <div class="tea-title">Tea Item #2 </div>
+        <div class="tea-title">Lavender Tea </div>
         </v-col>
         <v-col align="center">
       <v-img src="https://picsum.photos/id/312/3600/3600" alt="nate"
         class="img">
       </v-img>
-      <div class="tea-title">Tea Item #3 </div>
+      <div class="tea-title">Honey tea </div>
         </v-col>
         <v-col cols="1" v-show="$vuetify.breakpoint.lg"/>
     </v-row>
