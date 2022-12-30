@@ -99,11 +99,16 @@ export default {
 .card:hover .imgbox{
   width:150px;
   height:150px;
-  /* left:-75px; */
   left:365px;
   top:calc(50% - 75px);
-  /* right:-75px; */
-  /* top:calc(50% px); */
+}
+@media (max-width:600px) {
+.card:hover .imgbox{
+  width:150px;
+  height:150px;
+  left:-75px;
+  top:calc(50% - 75px);
+}
 }
 .card .content{
   margin-top:20px;

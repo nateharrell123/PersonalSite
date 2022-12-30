@@ -20,6 +20,7 @@
                         in Computer Science. I currently work full time as 
                         an associate developer at <span @click="toCommerce" class="commerce"> Commerce Bank. </span>
                         <br/>
+                        <br/>
                         I love designing UI and the functionality behind web components. Front end, back end,
                         I do it all!
                         Beyond software engineering, I am an avid musician! If you're curious, check out my
@@ -89,9 +90,12 @@
                 <v-col>
                     <ul>
                         <li>HTML/CSS + Javascript</li>
+                        <li> UI/UX Design </li>
                         <li>Bootstrap/Grid System</li>
-                        <li>AJAX/Axios</li>
+                        <li>AJAX/Axios calls</li>
                         <li>C#/ASP.NET Web APIs</li>
+                        <li>Relational database design + SQL </li>
+                        <li> Linux/Nginx </li>
                     </ul>
                 </v-col>
             </v-row>

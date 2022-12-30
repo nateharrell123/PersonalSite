@@ -52,7 +52,7 @@
       </v-row>
       <v-row>
         <v-col>
-            <a class="resume" @click="showResume" href="/files/Nate.pdf">Résumé </a>
+            <a class="resume" href="#" @click="showResume">Résumé </a>
         </v-col>
       </v-row>
             </v-col>
