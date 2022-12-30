@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <v-row>
             <v-col align="center">
                 <span class="menu-title">MENU</span>
@@ -44,6 +44,9 @@ export default {
 </script>
 
 <style scoped>
+.container{
+    margin-bottom:5%;
+}
 .menu-title{
     font-size:50px;
     font-weight:400;

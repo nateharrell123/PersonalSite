@@ -1,29 +1,33 @@
 <template>
   <!-- <v-row> -->
     <!-- <v-col align="center" class="ma-0 pa-0"> -->
-      <v-carousel hide-delimiters class="carousel" :show-arrows="false" v-model="model">
-        <v-carousel-item src="https://picsum.photos/id/42/3600/3600">
-          <v-row
-            class="fill-height"
-            align="center"
-            justify="center"
-          >
-            <div class="text-h2" style="padding-top:6%;">
-             <span id="fade-in" class="greeting"> THE BEST TEA AROUND.</span>
-             <div style="padding-bottom:120px;"/>
-            <div class="under" style="text-align:center;">
-              <v-btn id="fade-in" width="250" height="70" rounded class="nav-buttons">
-                  <span class="button-text-color">ORDER NOW</span>
-              </v-btn>
-            </div>
-            </div>
-          </v-row>
+      <v-carousel hide-delimiters class="carousel" :show-arrows="false" v-model="model" height="auto">
+        <div class="title-container">
+          <v-carousel-item src="https://picsum.photos/id/42/2560/1600">
+            <v-row
+              class="fill-height mb-5"
+              align="center"
+              justify="center"
+            >
+            <v-col>
+              <div class="text-h2" style="padding-top:6%;">
+              <span id="fade-in" class="greeting"> THE BEST TEA AROUND.</span>
+              <div style="padding-bottom:120px;"/>
+              <div class="under" style="text-align:center;">
+                <v-btn id="fade-in" width="250" height="70" rounded class="nav-buttons">
+                    <span class="button-text-color">ORDER NOW</span>
+                </v-btn>
+              </div>
+              </div>
+            </v-col>
+            </v-row>
 
-        </v-carousel-item>
+          </v-carousel-item>
+        </div>
         <v-carousel-item>
           <Menu/>
         </v-carousel-item>
-        <v-carousel-item src="https://picsum.photos/id/330/3600/3600">
+        <v-carousel-item src="https://picsum.photos/id/63/2560/1600">
           <BobaAbout/>
         </v-carousel-item>
       </v-carousel>
@@ -72,6 +76,8 @@ export default {
   /* border: px solid black; */
   box-shadow:0 5px 15px rgba(0,0,0, 0.5);
 }
+.title-container{
+}
 .inner{
   position:relative;
 }
@@ -104,6 +110,12 @@ export default {
     padding-bottom:90px;
     color:white;
     text-shadow: rgb(0 0 0 / 40%) 0px 2px 5px;
+}
+@media (max-width:600px) {
+  .greeting{
+    position:relative;
+    left:60px;
+  }
 }
 @keyframes fadein {
   0% {

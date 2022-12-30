@@ -1,13 +1,13 @@
 <template>
     <v-row class="menu-row">
         <v-col cols="4">
-            <v-avatar size="140px" v-show="$vuetify.breakpoint.lg">
+            <v-avatar size="140px">
             <v-img :src="Picture" alt="nate"
                 class="nate">
             </v-img>
             </v-avatar>
         </v-col>
-        <v-col cols="8" align="left">
+        <v-col cols="8" align="left" v-show="$vuetify.breakpoint.lg">
             <div class="menu-item-title">
                 {{Title}}
                 <span class="price"> ${{Price}} </span>
