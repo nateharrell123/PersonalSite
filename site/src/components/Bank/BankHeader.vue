@@ -1,5 +1,11 @@
 <template>
+<div>
     <v-row class="header" justify="center" align="center">
+      <div class="home">
+        <v-btn @click="toHome" icon class="back-icon">
+        <v-icon large>mdi-arrow-left-circle-outline</v-icon>
+        </v-btn>
+      </div>
     <v-col class="ma-2 mb-0" cols="2">
       <v-avatar size="60px">
       <v-img src="@/assets/bank/circle-icon.png" class="bank-img"
@@ -27,6 +33,7 @@
       </v-btn>
     </v-col>
     </v-row>    
+</div>
 </template>
 
 <script>
@@ -58,6 +65,11 @@ export default {
     position:relative;
     left:40px;
   }
+}
+.home{
+  position:relative;
+  left:14px;
+  top:3px;
 }
 .sign-in-button{
   font-family: 'Montserrat', sans-serif;

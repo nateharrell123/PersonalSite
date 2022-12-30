@@ -4,6 +4,7 @@
     <Greeting/>
     <Projects/>
     <!-- <ContactMe/> -->
+    <AboutContent id="fade-in"/>
     <ProjectFooter/>
 </div>
 </template>
@@ -15,6 +16,7 @@ import Greeting from "../components/Greeting.vue"
 import Projects from "../components/Projects.vue"
 // import ContactMe from "../components/ContactMe.vue"
 import ProjectFooter from "../components/ProjectFooter.vue"
+import AboutContent from "../components/About/AboutContent.vue"
 
 export default {
   name: "Home",
@@ -23,7 +25,8 @@ export default {
     Greeting,
     Projects,
     // ContactMe,
-    ProjectFooter
+    ProjectFooter,
+    AboutContent,
   }
 };
 </script>
