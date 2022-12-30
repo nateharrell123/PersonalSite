@@ -7,7 +7,6 @@
       >
       </v-img>
     </div>
-
     <v-row class="ma-0 pa-0">
       <v-col cols="2"/>
       <v-col>

@@ -32,13 +32,10 @@ export default {
     }
   },
   methods: {
-    contact(){
+    about(){
       document.getElementById("sneaky").scrollIntoView({
         behavior: "smooth"
       });
-    },
-    about() {
-      this.$router.push("About");
     },
   }
 }
