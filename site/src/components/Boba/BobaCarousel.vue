@@ -1,7 +1,7 @@
 <template>
   <!-- <v-row> -->
     <!-- <v-col align="center" class="ma-0 pa-0"> -->
-      <v-carousel hide-delimiters class="carousel" :show-arrows="false" v-model="model" height="auto">
+      <v-carousel hide-delimiters class="carousel" :show-arrows="false" v-model="model">
         <div class="title-container">
           <v-carousel-item src="https://picsum.photos/id/42/2560/1600">
             <v-row
@@ -77,7 +77,7 @@ export default {
   box-shadow:0 5px 15px rgba(0,0,0, 0.5);
 }
 .text{
-  margin-top:15%;
+  margin-top:7%;
 }
 .order{
   text-align: center;
@@ -118,12 +118,11 @@ export default {
     text-align: center;
     text-shadow: rgb(0 0 0 / 40%) 0px 2px 5px;
 }
-/* @media (max-width:600px) {
-  .greeting{
-    position:relative;
-    left:60px;
+@media (max-width:600px) {
+  .carousel{
+    
   }
-} */
+}
 @keyframes fadein {
   0% {
     opacity: 0;

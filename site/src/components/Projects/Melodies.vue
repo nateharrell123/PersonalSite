@@ -99,7 +99,8 @@ export default {
 .card:hover .imgbox{
   width:150px;
   height:150px;
-  left:365px;
+  /* left:365px; */
+  left:90%;
   top:calc(50% - 75px);
 }
 @media (max-width:600px) {
