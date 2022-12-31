@@ -3,7 +3,7 @@
         <div class="inside">
         <v-row align="center" justify="center">
             <v-col class="text" align="end">
-                @ Nateharrell (©2022 & beyond!)
+                © 2022 Nate Harrell
             </v-col>
             <v-col class="socials ma-0 pa-0"> 
                     <svg @click="toLinkedIn" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
