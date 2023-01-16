@@ -11,7 +11,7 @@
 </v-card> -->
 <div class="container">
   <v-card color="#222" class="card">
-    <div class="imgbox">
+    <div class="imgbox" onclick="">
       <!-- <i class="fab fa-angular"></i> -->
       <v-img src="@/assets/note.png" alt="nate" class="fab fa-angular"
       max-width="80"
