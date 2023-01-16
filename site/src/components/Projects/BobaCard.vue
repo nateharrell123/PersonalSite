@@ -1,7 +1,7 @@
 <template>
 <div class="container">
   <v-card color="#edce7f" class="card">
-    <div class="imgbox">
+    <div class="imgbox" onclick="">
       <v-img src="@/assets/tea.png" alt="nate" class="boba-img"
       max-width="80"
       >

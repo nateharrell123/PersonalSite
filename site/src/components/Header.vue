@@ -78,6 +78,7 @@ export default {
     .contact{
       /* margin-top:3%; */
       margin-top:30%;
+      margin-right:15%;
     }
 }
 .contact{
