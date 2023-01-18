@@ -12,7 +12,6 @@
             <v-col>
               <div class="text-h2">
               <div id="fade-in" class="greeting"> THE BEST TEA AROUND.</div>
-              <!-- <div style="padding-bottom:120px;"/> -->
               <div class="order">
                 <v-btn id="fade-in" width="250" height="70" rounded class="nav-buttons">
                     <span class="button-text-color">ORDER NOW</span>
