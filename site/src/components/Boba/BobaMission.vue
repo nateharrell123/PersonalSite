@@ -1,13 +1,12 @@
 <template>
     <div class="container">
         <v-row class="mission-container">
-            <v-col cols="2"/>
-            <v-col cols="3" class="ml-2"  v-show="$vuetify.breakpoint.lg">
-            <v-img width="311" height="482" src="https://picsum.photos/id/225/2400/2400" alt="nate"
+            <v-col lg="4" cols="12">
+            <v-img height="400" src="https://picsum.photos/id/225/600/600" alt="nate"
                 class="nate">
             </v-img>
             </v-col>
-            <v-col cols="5" class="message-cont">
+            <v-col class="message-cont">
                 <div class="title">Our Story</div>
                 <v-col class="message">
                     Here at Boba Cafe, we strive to deliver the<strong> best </strong>tasting boba milk tea around.
@@ -24,7 +23,6 @@
                 </v-btn>
                 </v-col>
             </v-col>
-            <v-col cols="2"/>
         </v-row>
     </div>
 </template>
@@ -48,6 +46,8 @@ export default {
 <style scoped>
 .mission-container{
     margin-top:100px;
+    margin-right:10%;
+    margin-left:10%;
 }
 .nate{
     background-size:100%;
@@ -71,7 +71,6 @@ export default {
     line-height:1;
 }
 .message{
-    text-align:left;
     margin-top:40px;
     font-weight:400;
     font-size:17px;

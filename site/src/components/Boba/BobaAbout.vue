@@ -12,10 +12,10 @@
                 <br/>
                 <br/>
                 <br/>
-                We treat every drink as a special experience for our customers to enjoy, and we hope that our tea will help you get through whatever life throws at you.
+                We treat every drink as a special experience for our customers to enjoy. <div v-show="$vuetify.breakpoint.lg">We hope that our tea will help you get through whatever life throws at you.
                 <br/>
                 <br/>
-                We use only the best ingredients, for the best customers. Everything is made in-house to ensure the best quality for you.
+                We use only the best ingredients, for the best customers. Everything is made in-house to ensure the best quality for you. </div>
             </v-col>
             <v-col cols="2"/>
         </v-row>
