@@ -22,7 +22,7 @@
             <br/>
             I built this using Vue.js, ASP.NET Core and a few open source libraries (details on  my <span class="gitLink" @click="toGit"> GitHub!) </span>
           </p>
-          <a @click="toMelodies"> Visit </a>
+          <a @click="toMelodies" class="pad"> Visit </a>
         </div>
       </v-col>
     </v-row>
@@ -78,6 +78,7 @@ export default {
   border-radius:30px;
   box-shadow:0 5px 15px rgba(0,0,0, 0.5);
   min-height:350px;
+  margin-bottom:20px;
 }
 .card .imgbox{
   position:absolute;
@@ -117,7 +118,7 @@ export default {
   top:20px;
   font-size:24px;
   text-transform: uppercase;
-    background-image: linear-gradient(45deg, #eb1e82, #f88d30);
+  background-image: linear-gradient(45deg, #eb1e82, #f88d30);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -149,6 +150,7 @@ export default {
   background:linear-gradient(90deg, #f403d4, #f44141, #ddca1b, #f403d4);
   background-size:400%;
   z-index:1;
+  margin-bottom:10px;
 }
 
 .card .content #angular{

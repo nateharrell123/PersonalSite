@@ -18,7 +18,7 @@
             for Boba milk tea. I'd like to design websites for restaurants someday, so I figured this would be a good start.
             <br/>
             <br/>
-            This project is built within this Vue app. It's an app, inside of an app!
+            This project is built within this Vue app. It's an app, inside of an app! :O
           </p>
           <v-btn @click="toBoba">
             Visit

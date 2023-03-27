@@ -16,7 +16,11 @@
             WeBank (Concept website)
           </h3>
           <p id="desc">WeBank is a concept website 
-            for all your digital banking needs.
+            for all your digital banking needs. This is just a simple dashboard showing account balances
+            and other typical bank-ey stuff. 
+            <br/>
+            <br/>
+            This, like the next project, is a Vue project built inside of this Vue project! :O
           </p>
         </div>
       </v-col>
@@ -73,7 +77,7 @@ export default {
 }
 .card{
   position:relative;
-  height:200px; 
+  min-height:350px;
   background-color:#222;
   border-radius:30px;
   box-shadow:0 5px 15px rgba(0,0,0, 0.5);

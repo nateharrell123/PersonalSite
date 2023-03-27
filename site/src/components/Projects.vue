@@ -10,16 +10,16 @@
                 <v-col class="ma-0 pa-0">
                     <Melodies/>
                 </v-col>
-                <v-col>
-                    <BobaCard/>
+                <v-col class="mt-0 pt-0">
+                    <Clarity/>
                 </v-col>
             </v-row>
             <v-row class="shrink" id="projects">
-                <v-col>
+                <v-col class="ma-0 pb-12">
                     <BankCard/>
                 </v-col>
                 <v-col>
-                    <Clarity/>
+                    <BobaCard/>
                 </v-col>
             </v-row>
         </v-container>
