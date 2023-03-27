@@ -15,7 +15,7 @@
             Boba Cafe (Concept website)
           </h3>
           <p id="text-2">Boba Cafe is a concept website 
-            for Boba milk tea. 
+            for Boba milk tea. I'd like to design websites for restaurants someday, so I figured this would be a good start.
             <br/>
             <br/>
             This project is built within this Vue app. It's an app, inside of an app!
@@ -77,7 +77,7 @@ export default {
   padding:0;
 }
 .card{
-  min-height:200px;
+  min-height:350px;
   position:relative;
   background-color:#222;
   border-radius:30px;
@@ -104,16 +104,18 @@ export default {
 .card:hover .imgbox{
   width:150px;
   height:150px;
-  left:-75px;
+  /* left:365px; */
+  left:90%;
   top:calc(50% - 75px);
 }
+
 .card:hover .title-hardcode {
   opacity: 0;
   transition: opacity 0.5s ease-out;
 }
 .card .content{
   padding-left:80px;
-  padding-right:20px;
+  padding-right:40px;
   padding-top:20px;
 }
 #angular{

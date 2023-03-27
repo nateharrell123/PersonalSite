@@ -7,11 +7,11 @@
                 </v-col>
             </v-row>
             <v-row id="projects">
-                <v-col>
-                    <BobaCard/>
+                <v-col class="ma-0 pa-0">
+                    <Melodies/>
                 </v-col>
                 <v-col>
-                    <Melodies/>
+                    <BobaCard/>
                 </v-col>
             </v-row>
             <v-row class="shrink" id="projects">
