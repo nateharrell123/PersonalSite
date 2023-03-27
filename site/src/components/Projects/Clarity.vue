@@ -1,28 +1,24 @@
 <template>
-<div>
-  <v-card color="#edce7f" class="card">
+<div class="container">
+  <v-card color="#222" class="card">
     <div class="imgbox" onclick="">
-    <div class="title-hardcode"> Boba Cafe </div>
-      <v-img src="@/assets/tea.png" alt="nate" class="boba-img"
+      <!-- <i class="fab fa-angular"></i> -->
+      <v-img src="@/assets/note.png" alt="nate" class="fab fa-angular"
       max-width="80"
       >
       </v-img>
     </div>
-    <v-row>
+
+    <v-row class="ma-0 pa-0">
       <v-col>
         <div class="content">
           <h3 id="angular">
-            Boba Cafe (Concept website)
+            MELODIES.TO
           </h3>
-          <p id="text-2">Boba Cafe is a concept website 
-            for Boba milk tea. 
-            <br/>
-            <br/>
-            This project is built within this Vue app. It's an app, inside of an app!
+          <p id="text-2">Melodies.to is a web application
+            that creates AI generated melodies.
           </p>
-          <v-btn @click="toBoba">
-            Visit
-          </v-btn>
+          <a @click="toMelodies"> Visit </a>
         </div>
       </v-col>
     </v-row>
@@ -32,10 +28,10 @@
 
 <script>
 export default {
-    name: "BobaCard",
+    name: "Clarity",
     methods: {
-        toBoba(){
-            this.$router.push('Boba');
+        toMelodies(){
+            window.open('https://clarityfreight.com')
         }
     }
 }
@@ -46,23 +42,9 @@ export default {
     margin: 0 auto;
 }
 #text-2{
-  color:#4f3f30;
-}
-.title-hardcode{
-  position:absolute;
-  top:20px;
-  font-size:24px;
-  text-transform: uppercase;
-  color:#dc6f56;
-  font-weight:bold;
-  transition: opacity 0.5s ease-in-out;
-}
-@media (max-width:980px){
-.btn{
-        margin-left:27px;
-        position:relative;
-        bottom:49px;
-    }
+  background-image: linear-gradient(45deg, #eb1e82, #f88d30);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .desc{
     text-align: center;
@@ -72,13 +54,15 @@ export default {
 }
 .container{
   position:relative;
+  /* max-width:100vw;  */
+  /* display:flex; */
   justify-content: space-around;
   flex-wrap: wrap;
   padding:0;
 }
 .card{
-  min-height:200px;
   position:relative;
+  height:200px; 
   background-color:#222;
   border-radius:30px;
   box-shadow:0 5px 15px rgba(0,0,0, 0.5);
@@ -87,7 +71,7 @@ export default {
   position:absolute;
   top:10px;
   left:10px;
-  /* background:rgba(255,255,255, 0.1); */
+  background:rgba(255,255,255, 0.1);
   width: calc(100% - 20px);
   height:calc(100% - 20px);
   z-index:10;
@@ -104,26 +88,46 @@ export default {
 .card:hover .imgbox{
   width:150px;
   height:150px;
+  /* left:365px; */
+  left:90%;
+  top:calc(50% - 75px);
+}
+@media (max-width:600px) {
+.card:hover .imgbox{
+  width:150px;
+  height:150px;
   left:-75px;
   top:calc(50% - 75px);
 }
-.card:hover .title-hardcode {
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
 }
 .card .content{
-  padding-left:80px;
-  padding-right:20px;
-  padding-top:20px;
+  margin-top:20px;
+  margin-left:20px;
 }
 #angular{
-  color:#dc6f56;
+  background-image: linear-gradient(45deg, #eb1e82, #f88d30);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card .content a{
+  /* display:inline-block; */
+  font-size:0.9em;
+  /* margin-top:10px; */
+  border-radius:5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight:400;
+  color:#fff;
+  background:linear-gradient(90deg, #f403d4, #f44141, #ddca1b, #f403d4);
+  background-size:400%;
+  z-index:1;
+}
+.card .content #angular{
+  color:#ff5165;
+  text-transform:uppercase;
 }
 .card .content a:hover{
   animation: animate 8s linear infinite;
-}
-.boba-img{
-  filter: invert(63%) sepia(91%) saturate(2715%) hue-rotate(326deg) brightness(94%) contrast(82%);
 }
 
 @keyframes animate{

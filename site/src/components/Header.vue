@@ -1,26 +1,20 @@
 <template>
-<div>
-  <v-row class="ma-0 pa-0" id="row">
-    <v-col cols="2"/>
-    <v-col class="pb-0">
+<v-container class="header-container">
+  <v-row id="row">
+    <v-col lg="6" cols="6" class="nate-col">
       <v-avatar size="60px">
-      <v-img src="../assets/nate.jpg" alt="nate"
-        class="nate">
-      </v-img>
+        <v-img src="../assets/nate.jpg" alt="nate"
+          class="nate">
+        </v-img>
       </v-avatar>
-      <span class="name">
-        Nate Harrell
-      </span>
+      <span class="name"> Nate Harrell</span>
     </v-col>
-    <v-col>
-      <button @click="about" style="margin-left:50px;" class="contact about"> About </button>
-      <!-- <button @click="contact" class="contact">Contact</button> -->
+    <v-col cols="6" class="about-col align-self-center">
+      <button @click="about" class="contact about"> About </button>
     </v-col>
-    <v-col cols="2"/>
   </v-row>
-  <div id="sneaky">
-    </div>
-</div>
+  <div id="sneaky"/>
+</v-container>
 </template>
 
 <script>
@@ -42,6 +36,21 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 599px) {
+  .about-col {
+    position:relative;
+    top:25px;
+  }
+}
+.nate-col{
+  padding-left:15%;
+}
+.about-col{
+  padding-right:15%;
+}
+.header-container{
+  min-width:100%;
+}
 .socials{
   position:relative;
   top:11px;
@@ -57,7 +66,6 @@ export default {
 }
 #row{
   border-bottom: .02rem rgb(197, 194, 194) solid;
-  padding-bottom:10px !important;
 }
 .nate{
   border-radius: 1000px;
@@ -67,19 +75,8 @@ export default {
     letter-spacing: 2px;
     font-weight:180;
     font-size:22px;
-    padding-left:15px;
     vertical-align: middle;
     white-space: nowrap;
-}
-@media (max-width:600px){
-    .name{
-        padding-left:0px;
-    }
-    .contact{
-      /* margin-top:3%; */
-      margin-top:30%;
-      margin-right:15%;
-    }
 }
 .contact{
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
@@ -89,8 +86,6 @@ export default {
   background: none;
   outline: none;
   border:none;
-  position:relative;
-  top:14px;
   float:right;
 }
 .contact:hover{
