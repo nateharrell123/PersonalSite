@@ -2,6 +2,7 @@
 <div class="container">
   <v-card color="#1eb88f" class="card">
     <div class="imgbox" onclick="">
+    <div class="title-hardcode">WEBANK</div>
       <v-img src="@/assets/bank/circle-icon.png" alt="nate" class="boba-img"
       max-width="80"
       >
@@ -66,6 +67,20 @@ export default {
 }
 #melody-card{
   border-radius:20px;
+}
+.title-hardcode{
+  position:absolute;
+  top:20px;
+  font-size:24px;
+  text-transform: uppercase;
+  color:white;
+
+  font-weight:bold;
+  transition: opacity 0.5s ease-in-out;
+}
+.card:hover .title-hardcode {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
 }
 .container{
   position:relative;

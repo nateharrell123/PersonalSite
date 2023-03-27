@@ -15,8 +15,8 @@
                 </v-col>
             </v-row>
             <v-row class="shrink" id="projects">
-                <v-col class="ma-0 pb-12">
-                    <BankCard/>
+                <v-col class="ma-0 pa-0">
+                    <BankCard class="fix"/>
                 </v-col>
                 <v-col>
                     <BobaCard/>
@@ -57,6 +57,11 @@ export default {
 }
 #projects{
     animation: 3s ease 0s normal forwards 1 fadein;
+}
+@media (max-width: 599px) {
+  .fix {
+    margin-bottom:30px;
+  }
 }
 
 @keyframes fadein {
