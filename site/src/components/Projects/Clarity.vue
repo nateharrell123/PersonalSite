@@ -1,28 +1,28 @@
 <template>
-<div>
-  <v-card color="#222" class="card">
+<div class="container">
+  <v-card color="#144058" class="card">
     <div class="imgbox" onclick="">
-    <div class="title-hardcode">MELODIES.TO</div>
-      <v-img src="@/assets/note.png" alt="nate" class="fab fa-angular"
+    <div class="title-hardcode"> CLARITYFREIGHT.COM </div>
+      <v-img src="@/assets/clarity.png" alt="nate" class="fab fa-angular"
       max-width="80"
       >
       </v-img>
     </div>
 
     <v-row class="ma-0 pa-0">
-      <v-col cols="2"/>
       <v-col>
         <div class="content">
           <h3 id="angular">
-            MELODIES.TO
+            CLARITYFREIGHT.COM
           </h3>
-          <p id="text-2">Melodies.to is a web application
-            that creates AI generated melodies.
+          <p id="text-2">Clarityfreight.com is a website I built for a freight shipping company.
             <br/>
             <br/>
-            I built this using Vue.js, ASP.NET Core and a few open source libraries (details on  my <span class="gitLink" @click="toGit"> GitHub!) </span>
+            They had an old wordpress site that was a little out-dated and ran a little slow.
+            I was fortunate to have the opportunity to rebuild it, improve its speed and modernize it! 
+            It was built using Vuetify and Vue.js (no backend!)
           </p>
-          <a @click="toMelodies" class="pad"> Visit </a>
+          <span class="toClarity" @click="toMelodies"> Visit </span>
         </div>
       </v-col>
     </v-row>
@@ -32,53 +32,86 @@
 
 <script>
 export default {
-    name: "Melodies",
+    name: "Clarity",
     methods: {
         toMelodies(){
-            window.open('https://melodies.to')
-        },
-        toGit(){
-          window.open('https://github.com/nateharrell123/Melody-Maker')
+            window.open('https://clarityfreight.com')
         }
     }
 }
 </script>
 <style scoped>
+
+.toClarity{
+  font-size:0.9em;
+  border-radius:5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight:400;
+  color:#fff;
+  background:linear-gradient(90deg, #5d92ae, #26c2ff, #339753, #5d92ae);
+  background-size:400%;
+  z-index:1;
+  margin-bottom:10px;
+cursor: pointer;
+}
+.toClarity:hover{
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    background-position:0;
+  }
+  100%{
+    background-position:400%;
+  }
+}
+.title-hardcode{
+  position:absolute;
+  top:20px;
+  font-size:24px;
+  text-transform: uppercase;
+    background-image: linear-gradient(45deg, #5d92ae, #339753); /* #144058 */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-weight:bold;
+  transition: opacity 0.5s ease-in-out;
+}
+.card:hover .title-hardcode {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
 .center{
     display:table;
     margin: 0 auto;
 }
-.gitLink{
-  cursor: pointer;
-  border-bottom: 1px solid #eb1e82;
-}
-.gitLink:hover{
-  background-image: linear-gradient(45deg, #ff63af, #ffb26e);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border-bottom: 1px solid #ff63af;
-}
 #text-2{
-  background-image: linear-gradient(45deg, #eb1e82, #f88d30);
+    background-image: linear-gradient(45deg, #83c6ea, #59db82); /* #144058 */
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.desc{
+    text-align: center;
 }
 #melody-card{
   border-radius:20px;
 }
 .container{
   position:relative;
+  /* max-width:100vw;  */
+  /* display:flex; */
   justify-content: space-around;
   flex-wrap: wrap;
   padding:0;
 }
 .card{
   position:relative;
+  min-height:350px;
   background-color:#222;
   border-radius:30px;
   box-shadow:0 5px 15px rgba(0,0,0, 0.5);
-  min-height:350px;
-  margin-bottom:20px;
 }
 .card .imgbox{
   position:absolute;
@@ -101,47 +134,33 @@ export default {
 .card:hover .imgbox{
   width:150px;
   height:150px;
-  left:-75px;
+  /* left:365px; */
+  left:90%;
   top:calc(50% - 75px);
 }
 @media (max-width:600px) {
 .card:hover .imgbox{
   width:150px;
   height:150px;
-  /* left:365px; */
-  left:90%;
+  left:-75px;
   top:calc(50% - 75px);
 }
 }
-.title-hardcode{
-  position:absolute;
-  top:20px;
-  font-size:24px;
-  text-transform: uppercase;
-  background-image: linear-gradient(45deg, #eb1e82, #f88d30);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  font-weight:bold;
-  transition: opacity 0.5s ease-in-out;
-}
-.card:hover .title-hardcode {
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-}
 .card .content{
-  padding-right:80px;
-  padding-left:40px;
+  padding-left:80px;
+  padding-right:40px;
   padding-top:20px;
   padding-bottom:20px;
 }
 #angular{
-  background-image: linear-gradient(45deg, #eb1e82, #f88d30);
+    background-image: linear-gradient(45deg, #7dc0e4, #50cf78); /* #144058 */
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .card .content a{
+  /* display:inline-block; */
   font-size:0.9em;
+  /* margin-top:10px; */
   border-radius:5px;
   padding: 10px 20px;
   text-decoration: none;
@@ -150,9 +169,7 @@ export default {
   background:linear-gradient(90deg, #f403d4, #f44141, #ddca1b, #f403d4);
   background-size:400%;
   z-index:1;
-  margin-bottom:10px;
 }
-
 .card .content #angular{
   color:#ff5165;
   text-transform:uppercase;

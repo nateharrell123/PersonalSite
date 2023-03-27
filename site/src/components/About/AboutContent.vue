@@ -128,10 +128,7 @@
 
 <style scoped>
 .content-container{
-    margin-left:15%;
-    margin-top:5%;
-    margin-right:15%;
-    margin-bottom:15%;
+    margin-bottom:10%;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif !important;
 }
 .content-card{

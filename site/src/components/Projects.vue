@@ -1,39 +1,28 @@
 <template>
     <div class="projects-container">
-        <v-row class="ma-0 pa-0">
-            <v-col cols="2"/>
-            <v-col cols="8">
-                <p class="title">Check out my projects:</p>
-            </v-col>
-            <v-col cols="2"/>
-        </v-row>
-        <v-row class="shrink" id="projects">
-            <v-col cols="2" v-show="$vuetify.breakpoint.lg || $vuetify.breakpoint.xl"/>
-            <v-col>
-                <BobaCard/>
-            </v-col>
-            <v-col>
-            <Melodies/>
-            </v-col>
-            <v-col cols="2" v-show="$vuetify.breakpoint.lg || $vuetify.breakpoint.xl"/>
-        </v-row>
-        <v-row class="shrink" id="projects">
-            <v-col cols="2" v-show="$vuetify.breakpoint.lg || $vuetify.breakpoint.xl"/>
-            <v-col>
-                <BankCard/>
-            </v-col>
-            <v-col cols="2" v-show="$vuetify.breakpoint.lg || $vuetify.breakpoint.xl"/>
-        </v-row>
-        <!-- <v-row class="shrink" id="projects">
-            <v-col cols="2" v-show="$vuetify.breakpoint.lg"/>
-            <v-col>
-                <BankCard/>
-            </v-col>
-            <v-col>
-                <BankCard/>
-            </v-col>
-            <v-col cols="2" v-show="$vuetify.breakpoint.lg"/>
-        </v-row> -->
+        <v-container>
+            <v-row class="ma-0 pa-0">
+                <v-col>
+                    <p class="title">Check out my projects:</p>
+                </v-col>
+            </v-row>
+            <v-row id="projects">
+                <v-col class="ma-0 pa-0">
+                    <Melodies/>
+                </v-col>
+                <v-col class="mt-0 pt-0">
+                    <Clarity/>
+                </v-col>
+            </v-row>
+            <v-row class="shrink" id="projects">
+                <v-col class="ma-0 pb-12">
+                    <BankCard/>
+                </v-col>
+                <v-col>
+                    <BobaCard/>
+                </v-col>
+            </v-row>
+        </v-container>
     </div>
 </template>
 
@@ -41,13 +30,15 @@
 import Melodies from "./Projects/Melodies.vue"
 import BobaCard from "./Projects/BobaCard.vue"
 import BankCard from "./Projects/BankCard.vue"
+import Clarity from "./Projects/Clarity.vue"
 
 export default {
     name: "Projects",
     components: {
         Melodies,
         BobaCard,
-        BankCard
+        BankCard,
+        Clarity
     }
 }
 </script>
@@ -63,12 +54,6 @@ export default {
     letter-spacing: 1px;
     padding-top:40px;
     animation: 3s ease 0s normal forwards 1 fadein;
-}
-@media (max-width:600px){
-    .shrink{
-        width:300px;
-        margin-left:60px;
-    }
 }
 #projects{
     animation: 3s ease 0s normal forwards 1 fadein;
